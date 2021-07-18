@@ -12,6 +12,10 @@ const userSchema = new Schema({
         type: String,
         required: "true",
       },
+    },
+  ],
+  contact: [
+    {
       email: {
         type: String,
         required: "true",
@@ -69,15 +73,15 @@ const userSchema = new Schema({
         type: String,
         required: "true",
       },
-      description: {
+      event_description: {
         type: String,
         required: "true",
       },
-      day: {
+      event_day: {
         type: Date,
         required: "true",
       },
-      address: {
+      event_address: {
         type: String,
         required: "true",
       },
