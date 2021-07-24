@@ -3,7 +3,8 @@ const charities = [
     charity: {
       type: "education",
       charity_name: "360Degrees",
-      logo: "image.png",
+      password: "1234",
+      imageUrl: "image.png",
     },
     contact: {
       email: "360degrees@360degrees.com",
@@ -17,6 +18,8 @@ const charities = [
     charity: {
       type: "health",
       charity_name: "Cancer Research UK",
+      password: "2222",
+      imageUrl: "image.png",
     },
     contact: {
       email: "cancer.health@gmail.com",
@@ -30,6 +33,8 @@ const charities = [
     charity: {
       type: "art_culture",
       charity_name: "Art Fund",
+      password: "4444",
+      imageUrl: "image.png",
     },
     contact: {
       email: "art.fund@gmail.com",
@@ -37,6 +42,21 @@ const charities = [
       address: "SN14 6NG",
       socials: "facebook.com",
       bio: "test",
+    },
+  },
+  {
+    charity: {
+      type: "environmental",
+      charity_name: "Living Lands and Waters",
+      password: "5552",
+      imageUrl: "image.png",
+    },
+    contact: {
+      email: "living.lands@gmai.com",
+      phone_number: "(309) 496-9848",
+      address: "East Moline, Illinois 61244SN14 6NG",
+      socials: "facebook.com",
+      bio: "To aid in the protection, preservation, and restoration of the natural environment of our nation’s major rivers and their watersheds.",
     },
   },
 ];

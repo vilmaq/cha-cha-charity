@@ -9,6 +9,12 @@ const init = async () => {
 
   const charityToEventMapper = {
     "360Degrees": ["Protect the rivers", "Protect the animals"],
+    "Cancer Research UK": ["Cancer Research UK"],
+    "Art Fund": ["BUY ART, GIVE ART"],
+    "Living Lands and Waters": [
+      "Arizona Poised to Permit Canyon Uranium Mine",
+      "Grand Canyon Trust",
+    ],
   };
 
   // seed events

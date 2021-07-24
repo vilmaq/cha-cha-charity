@@ -6,6 +6,7 @@ const events = [
     event_day: "2022-05-02",
     event_address: "L20 2RM, London",
     event_organizer: "the determined protector",
+    imageUrl: "",
   },
   {
     type: "Animals",
@@ -14,6 +15,7 @@ const events = [
     event_day: "2022-05-02",
     event_address: "B1 2DF, Birmingham",
     event_organizer: "the determined animal protector",
+    imageUrl: "",
   },
   {
     type: "Education",
@@ -22,15 +24,17 @@ const events = [
     event_day: "2022-05-02",
     event_address: "B1 2DF, Birmingham",
     event_organizer: "the determined book protector",
+    imageUrl: "",
   },
   {
-    type: "Art_Culture",
+    type: "Art_ulture",
     event_name: "BUY ART, GIVE ART",
     event_description:
       "For every artwork ordered on Rise Art, we give an art kit to a hospital. The kits are designed for young patients, and it’s theirs to use and keep.",
     event_day: "2022-05-02",
     event_address: "London, W1F 8RD",
     event_organizer: "Rise Art",
+    imageUrl: "",
   },
   {
     type: "Environmental",
@@ -40,6 +44,7 @@ const events = [
     event_day: "2022-05-02",
     event_address: "Colorado",
     event_organizer: "Grand Canyon Trust",
+    imageUrl: "",
   },
   {
     type: "Health",
@@ -49,6 +54,7 @@ const events = [
     event_day: "2022-05-02",
     event_address: "E20 1JQ",
     event_organizer: "Cancer Research Society",
+    imageUrl: "",
   },
   {
     type: "Environmental",
@@ -58,6 +64,7 @@ const events = [
     event_day: "2022-05-02",
     event_address: "Arizona",
     event_organizer: "Grand Canyon Trust",
+    imageUrl: "",
   },
 ];
 
