@@ -2,89 +2,72 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
-  user: [
-    {
-      first_name: {
-        type: String,
-        required: "true",
-      },
-      last_name: {
-        type: String,
-        required: "true",
-      },
+  user: {
+    first_name: {
+      type: String,
+      required: "true",
     },
-  ],
-  contact: [
-    {
-      email: {
-        type: String,
-        required: "true",
-      },
-      phone_number: {
-        type: String,
-        required: "true",
-      },
-      address: {
-        type: String,
-      },
-      socials: {
-        type: String,
-      },
-      bio: {
-        type: String,
-      },
+    last_name: {
+      type: String,
+      required: "true",
     },
-  ],
-  interests: [
-    {
-      animals: {
-        type: boolean,
-        required: "true",
-      },
-      environmental: {
-        type: boolean,
-        required: "true",
-      },
-      international: {
-        type: boolean,
-        required: "true",
-      },
-      health: {
-        type: boolean,
-        required: "true",
-      },
-      education: {
-        type: boolean,
-        required: "true",
-      },
-      art_culture: {
-        type: boolean,
-        required: "true",
-      },
+    password: {
+      type: String,
+      required: "true",
     },
-  ],
-  events: [
+  },
+
+  contact: {
+    email: {
+      type: String,
+      required: "true",
+    },
+    phone_number: {
+      type: String,
+      required: "true",
+    },
+    address: {
+      type: String,
+    },
+    socials: {
+      type: String,
+    },
+    bio: {
+      type: String,
+    },
+  },
+
+  interests: {
+    animals: {
+      type: boolean,
+      required: "true",
+    },
+    environmental: {
+      type: boolean,
+      required: "true",
+    },
+    international: {
+      type: boolean,
+      required: "true",
+    },
+    health: {
+      type: boolean,
+      required: "true",
+    },
+    education: {
+      type: boolean,
+      required: "true",
+    },
+    art_culture: {
+      type: boolean,
+      required: "true",
+    },
+  },
+
+  event: [
     {
-      type: {
-        type: String,
-        required: "true",
-      },
-      event_name: {
-        type: String,
-        required: "true",
-      },
-      event_description: {
-        type: String,
-        required: "true",
-      },
-      event_day: {
-        type: Date,
-        required: "true",
-      },
-      event_address: {
-        type: String,
-        required: "true",
-      },
+      type: Schema.Types.ObjectId,
+      ref: "Event",
     },
   ],
 });
