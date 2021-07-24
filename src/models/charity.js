@@ -15,6 +15,10 @@ const charitySchema = new Schema({
       type: String,
       required: "true",
     },
+    imageUrl: {
+      type: String,
+      required: "false",
+    },
   },
 
   contact: {
@@ -37,7 +41,7 @@ const charitySchema = new Schema({
     },
   },
 
-  event: [
+  events: [
     {
       type: Schema.Types.ObjectId,
       ref: "Event",
