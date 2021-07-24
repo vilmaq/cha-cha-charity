@@ -10,6 +10,7 @@ const init = async () => {
   const charityToEventMapper = {
     "360Degrees": ["Protect the rivers", "Protect the animals"],
   };
+
   // seed events
   await Event.deleteMany({});
   await Event.insertMany(events);

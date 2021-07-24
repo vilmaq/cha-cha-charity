@@ -1,7 +1,7 @@
 const charities = [
   {
     charity: {
-      type: "true",
+      type: "education",
       charity_name: "360Degrees",
       logo: "image.png",
     },
@@ -15,7 +15,7 @@ const charities = [
   },
   {
     charity: {
-      type: "true",
+      type: "environmental",
       charity_name: "true",
     },
     contact: {
