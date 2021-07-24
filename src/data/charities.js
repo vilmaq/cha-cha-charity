@@ -15,28 +15,28 @@ const charities = [
   },
   {
     charity: {
-      type: "environmental",
-      charity_name: "true",
+      type: "health",
+      charity_name: "Cancer Research UK",
     },
     contact: {
-      email: "true",
-      phone_number: "true",
-      address: "",
-      socials: "",
-      bio: "",
+      email: "cancer.health@gmail.com",
+      phone_number: "+44076833551",
+      address: "B22 3EF",
+      socials: "facebook.com",
+      bio: "test",
     },
   },
   {
     charity: {
-      type: "true",
-      charity_name: "true",
+      type: "art_culture",
+      charity_name: "Art Fund",
     },
     contact: {
-      email: "true",
-      phone_number: "true",
-      address: "",
-      socials: "",
-      bio: "",
+      email: "art.fund@gmail.com",
+      phone_number: "0203 757 9772",
+      address: "SN14 6NG",
+      socials: "facebook.com",
+      bio: "test",
     },
   },
 ];
