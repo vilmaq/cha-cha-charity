@@ -5,30 +5,30 @@ const userSchema = new Schema({
   user: {
     first_name: {
       type: String,
-      required: "true",
+      required: true,
     },
     last_name: {
       type: String,
-      required: "true",
+      required: true,
     },
     password: {
       type: String,
-      required: "true",
+      required: true,
     },
     imageUrl: {
       type: String,
-      required: "false",
+      required: false,
     },
   },
 
   contact: {
     email: {
       type: String,
-      required: "true",
+      required: true,
     },
     phone_number: {
       type: String,
-      required: "true",
+      required: true,
     },
     address: {
       type: String,
@@ -44,31 +44,31 @@ const userSchema = new Schema({
   interests: {
     animals: {
       type: boolean,
-      required: "true",
+      required: true,
     },
     environmental: {
       type: boolean,
-      required: "true",
+      required: true,
     },
     international: {
       type: boolean,
-      required: "true",
+      required: true,
     },
     health: {
       type: boolean,
-      required: "true",
+      required: true,
     },
     education: {
       type: boolean,
-      required: "true",
+      required: true,
     },
     art_culture: {
       type: boolean,
-      required: "true",
+      required: true,
     },
   },
 
-  event: [
+  events: [
     {
       type: Schema.Types.ObjectId,
       ref: "Event",

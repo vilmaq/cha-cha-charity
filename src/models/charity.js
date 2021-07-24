@@ -5,30 +5,30 @@ const charitySchema = new Schema({
   charity: {
     type: {
       type: String,
-      required: "true",
+      required: true,
     },
     charity_name: {
       type: String,
-      required: "true",
+      required: true,
     },
     password: {
       type: String,
-      required: "true",
+      required: true,
     },
     imageUrl: {
       type: String,
-      required: "false",
+      required: false,
     },
   },
 
   contact: {
     email: {
       type: String,
-      required: "true",
+      required: true,
     },
     phone_number: {
       type: String,
-      required: "true",
+      required: true,
     },
     address: {
       type: String,

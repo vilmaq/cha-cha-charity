@@ -27,7 +27,7 @@ const events = [
     imageUrl: "",
   },
   {
-    type: "Art_ulture",
+    type: "Art_Culture",
     event_name: "BUY ART, GIVE ART",
     event_description:
       "For every artwork ordered on Rise Art, we give an art kit to a hospital. The kits are designed for young patients, and it’s theirs to use and keep.",

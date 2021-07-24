@@ -3,6 +3,8 @@ const Event = require("../models/event");
 const events = require("./events");
 const Charity = require("../models/charity");
 const charities = require("./charities");
+const Company = require("../models/company");
+const companies = require("./companies");
 
 const init = async () => {
   await connect();
@@ -17,14 +19,32 @@ const init = async () => {
     ],
   };
 
-  // seed events
+  const companyToEventMapper = {
+    Morrisons: [
+      "Grand Canyon Trust",
+      "Arizona Poised to Permit Canyon Uranium Mine",
+    ],
+    IKEA: ["Cancer Research UK"],
+    Cisco: [
+      "Arizona Poised to Permit Canyon Uranium Mine",
+      "Grand Canyon Trust",
+    ],
+    Porsche: [],
+  };
+
+  // clear database
   await Event.deleteMany({});
+  await Company.deleteMany({});
+  await Charity.deleteMany({});
+
+  // seeds events
   await Event.insertMany(events);
 
   console.log("--- Successfully seeded events ---");
 
   const eventsFromDb = await Event.find({});
-  //seed charities
+
+  // seed charities
   const charitiesToSeed = charities.map((charity) => {
     const charityName = charity.charity.charity_name;
     const eventsForCharity = charityToEventMapper[charityName];
@@ -39,7 +59,32 @@ const init = async () => {
       events: eventIds,
     };
   });
+
   await Charity.insertMany(charitiesToSeed);
+
+  console.log("--- Successfully seeded charities ---");
+
+  // seeds companies
+
+  const companiesToSeed = companies.map((company) => {
+    const companyName = company.business.company_name;
+    const eventsForCompany = companyToEventMapper[companyName];
+    const eventIds = eventsForCompany.map((eventForCompany) => {
+      const { id } = eventsFromDb.find((event) => {
+        return event.event_name === eventForCompany;
+      });
+      return id;
+    });
+    return {
+      ...company,
+      events: eventIds,
+    };
+  });
+
+  console.log(companiesToSeed);
+  await Company.insertMany(companiesToSeed);
+
+  console.log("--- Successfully seeded companies ---");
 
   await disconnect();
 };
