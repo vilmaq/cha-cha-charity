@@ -1,26 +1,17 @@
-const express = require("express");
-const logger = require("morgan");
-const mongoose = require("mongoose");
-const compression = require("compression");
-const cors = require("cors");
+const { ApolloServer } = require("apollo-server");
 
-const { connect } = require("./config/connection");
-// const routes = require("./routes");
+const db = require("./config/connection");
 
-const PORT = process.env.PORT || 4000;
+const resolvers = require("./resolvers");
+const typeDefs = require("./schema");
 
-const app = express();
+const server = new ApolloServer({
+  typeDefs,
+  resolvers,
+});
 
-connect();
-
-app.use(cors());
-app.app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-app.use(logger("dev"));
-app.use(compression());
-
-app.use(routes);
-
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+db.once("open", () => {
+  server.listen().then(({ url }) => {
+    console.log(`🚀  Server ready at ${url}`);
+  });
 });
