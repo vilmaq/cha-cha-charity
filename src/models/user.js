@@ -43,27 +43,27 @@ const userSchema = new Schema({
 
   interests: {
     animals: {
-      type: boolean,
+      type: Boolean,
       required: true,
     },
     environmental: {
-      type: boolean,
+      type: Boolean,
       required: true,
     },
     international: {
-      type: boolean,
+      type: Boolean,
       required: true,
     },
     health: {
-      type: boolean,
+      type: Boolean,
       required: true,
     },
     education: {
-      type: boolean,
+      type: Boolean,
       required: true,
     },
     art_culture: {
-      type: boolean,
+      type: Boolean,
       required: true,
     },
   },

@@ -5,6 +5,8 @@ const Charity = require("../models/charity");
 const charities = require("./charities");
 const Company = require("../models/company");
 const companies = require("./companies");
+const User = require("../models/user");
+const users = require("./users");
 
 const init = async () => {
   await connect();
@@ -30,6 +32,14 @@ const init = async () => {
       "Grand Canyon Trust",
     ],
     Porsche: [],
+  };
+
+  const userToEventMapper = {
+    "jack.smith@gmail.com": ["Cancer Research UK"],
+    "sarah.james@gmail.com": ["Grand Canyon Trust"],
+    "roxette.brooks@gmail.com": [
+      "Arizona Poised to Permit Canyon Uranium Mine",
+    ],
   };
 
   // clear database
@@ -85,6 +95,28 @@ const init = async () => {
   await Company.insertMany(companiesToSeed);
 
   console.log("--- Successfully seeded companies ---");
+
+  // seeds users
+
+  const usersToSeed = users.map((user) => {
+    const email = user.contact.email;
+    const eventsForUser = userToEventMapper[email];
+    const eventIds = eventsForUser.map((eventForUser) => {
+      const { id } = eventsFromDb.find((event) => {
+        return event.event_name === eventForUser;
+      });
+      return id;
+    });
+    return {
+      ...user,
+      events: eventIds,
+    };
+  });
+
+  console.log(usersToSeed);
+  await User.insertMany(usersToSeed);
+
+  console.log("--- Successfully seeded users ---");
 
   await disconnect();
 };
