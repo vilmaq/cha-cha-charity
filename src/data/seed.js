@@ -60,7 +60,7 @@ const init = async () => {
     const eventsForCharity = charityToEventMapper[charityName];
     const eventIds = eventsForCharity.map((eventForCharity) => {
       const { id } = eventsFromDb.find((event) => {
-        return event.event_name === eventForCharity;
+        return event.name === eventForCharity;
       });
       return id;
     });
@@ -81,7 +81,7 @@ const init = async () => {
     const eventsForCompany = companyToEventMapper[companyName];
     const eventIds = eventsForCompany.map((eventForCompany) => {
       const { id } = eventsFromDb.find((event) => {
-        return event.event_name === eventForCompany;
+        return event.name === eventForCompany;
       });
       return id;
     });
@@ -103,7 +103,7 @@ const init = async () => {
     const eventsForUser = userToEventMapper[email];
     const eventIds = eventsForUser.map((eventForUser) => {
       const { id } = eventsFromDb.find((event) => {
-        return event.event_name === eventForUser;
+        return event.name === eventForUser;
       });
       return id;
     });

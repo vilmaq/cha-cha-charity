@@ -6,23 +6,23 @@ const eventSchema = new Schema({
     type: String,
     required: true,
   },
-  event_name: {
+  name: {
     type: String,
     required: true,
   },
-  event_description: {
+  description: {
     type: String,
     required: true,
   },
-  event_day: {
+  day: {
     type: Date,
     required: true,
   },
-  event_address: {
+  address: {
     type: String,
     required: true,
   },
-  event_organizer: {
+  organizer: {
     type: String,
   },
 });
