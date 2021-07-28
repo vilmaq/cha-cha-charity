@@ -86,6 +86,14 @@ const users = [
       socials: "facebook.com",
       bio: "test",
     },
+    interests: {
+      animals: false,
+      environmental: true,
+      international: false,
+      health: false,
+      education: false,
+      art_culture: false,
+    },
   },
   {
     user: {
@@ -101,6 +109,14 @@ const users = [
       address: "East Moline, Illinois 61244SN14 6NG",
       socials: "facebook.com",
       bio: "To aid in the protection, preservation, and restoration of the natural environment of our nation’s major rivers and their watersheds.",
+    },
+    interests: {
+      animals: false,
+      environmental: true,
+      international: false,
+      health: false,
+      education: false,
+      art_culture: false,
     },
   },
   {

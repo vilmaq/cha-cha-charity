@@ -13,23 +13,16 @@ const init = async () => {
     "roxette.brooks@gmail.com": [
       "Arizona Poised to Permit Canyon Uranium Mine",
     ],
-    Morrisons: [
-      "Grand Canyon Trust",
-      "Arizona Poised to Permit Canyon Uranium Mine",
-    ],
-    IKEA: ["Cancer Research UK"],
-    Cisco: [
+    "art.fund@gmail.com": ["BUY ART, GIVE ART"],
+    "living.lands@gmai.com": [
       "Arizona Poised to Permit Canyon Uranium Mine",
       "Grand Canyon Trust",
     ],
-    Porsche: [],
-    "360Degrees": ["Protect the rivers", "Protect the animals"],
-    "Cancer Research UK": ["Cancer Research UK"],
-    "Art Fund": ["BUY ART, GIVE ART"],
-    "Living Lands and Waters": [
-      "Arizona Poised to Permit Canyon Uranium Mine",
+    "customerservice@morrisons.com": [
       "Grand Canyon Trust",
+      "Arizona Poised to Permit Canyon Uranium Mine",
     ],
+    "customerservice@ikea.com": ["Cancer Research UK"],
   };
 
   // const companyToEventMapper = {
