@@ -25,6 +25,13 @@ const eventSchema = new Schema({
   organizer: {
     type: String,
   },
+
+  users: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "User",
+    },
+  ],
 });
 
 const Event = mongoose.model("Event", eventSchema);

@@ -26,9 +26,15 @@ const typeDefs = gql`
   type Interests {
     animals: Boolean
     environmental: Boolean
+    international: Boolean
+    health:Boolean
+    education:Boolean
+    art_culture: Boolean
   }
 
   type Query{}
+
+  type Mutation{}
 `;
 
 module.exports = typeDefs;
