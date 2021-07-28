@@ -24,9 +24,11 @@ const typeDefs = gql`
   }
 
   type Interests {
-    animals: true
-    environmental: true
+    animals: Boolean
+    environmental: Boolean
   }
+
+  type Query{}
 `;
 
 module.exports = typeDefs;

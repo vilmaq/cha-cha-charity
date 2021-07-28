@@ -60,4 +60,5 @@ const charities = [
     },
   },
 ];
+
 module.exports = charities;
