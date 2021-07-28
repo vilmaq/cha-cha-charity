@@ -7,6 +7,23 @@ const users = require("./users");
 const init = async () => {
   await connect();
 
+  const eventToParticipantMapper = {
+    "Protect the rivers": ["customerservice@ikea.com"],
+    "Protect the animals": ["customerservice@ikea.com"],
+    "Protect the books": ["customerservice@ikea.com"],
+    "Cancer Research UK": ["jack.smith@gmail.com", "customerservice@ikea.com"],
+    "Grand Canyon Trust": [
+      "sarah.james@gmail.com",
+      "customerservice@morrisons.com",
+      "living.lands@gmai.com",
+    ],
+    "Arizona Poised to Permit Canyon Uranium Mine": [
+      "roxette.brooks@gmail.com",
+      "living.lands@gmai.com",
+    ],
+    "BUY ART, GIVE ART": ["art.fund@gmail.com"],
+  };
+
   const userToEventMapper = {
     "jack.smith@gmail.com": ["Cancer Research UK"],
     "sarah.james@gmail.com": ["Grand Canyon Trust"],
@@ -52,6 +69,26 @@ const init = async () => {
 
   // seeds events
   await Event.insertMany(events);
+
+  // // seed participants
+  // const participantsToSeed = events.map((event) => {
+  //   const eventName = event.event.event;
+  //   console.log(eventName);
+  //   const participantsForUser = eventToParticipantMapper[eventName];
+  //   console.log(participantsForUser);
+  //   const participantIds = participantsForUser.map((participantForEvent) => {
+  //     const { id } = eventsFromDb.find((event) => {
+  //       return event.name === participantForEvent;
+  //     });
+  //     return id;
+  //   });
+  //   return {
+  //     ...events,
+  //     participants: participantIds,
+  //   };
+  // });
+
+  await User.insertMany(participantsToSeed);
 
   console.log("--- Successfully seeded events ---");
 
