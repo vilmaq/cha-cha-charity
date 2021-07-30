@@ -22,9 +22,6 @@ const userSchema = new Schema({
       type: String,
       required: false,
     },
-  },
-
-  contact: {
     email: {
       type: String,
       required: true,
@@ -55,9 +52,6 @@ const userSchema = new Schema({
     bio: {
       type: String,
     },
-  },
-
-  interests: {
     animals: {
       type: Boolean,
       required: true,

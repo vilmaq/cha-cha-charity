@@ -42,30 +42,9 @@ const init = async () => {
     "customerservice@ikea.com": ["Cancer Research UK"],
   };
 
-  // const companyToEventMapper = {
-  //   Morrisons: [
-  //     "Grand Canyon Trust",
-  //     "Arizona Poised to Permit Canyon Uranium Mine",
-  //   ],
-  //   IKEA: ["Cancer Research UK"],
-  //   Cisco: [
-  //     "Arizona Poised to Permit Canyon Uranium Mine",
-  //     "Grand Canyon Trust",
-  //   ],
-  //   Porsche: [],
-  // };
-
-  // const eventToUserMapper = {
-  //   ["Cancer Research UK"]: "jack.smith@gmail.com",
-  //   ["Grand Canyon Trust"]: "sarah.james@gmail.com",
-  //   ["Arizona Poised to Permit Canyon Uranium Mine"]:
-  //     "roxette.brooks@gmail.com",
-  // };
-
   // clear database
   await Event.deleteMany({});
   await User.deleteMany({});
-  //await Charity.deleteMany({});
 
   // seeds events
   await Event.insertMany(events);
@@ -88,7 +67,7 @@ const init = async () => {
   //   };
   // });
 
-  await User.insertMany(participantsToSeed);
+  // await User.insertMany(participantsToSeed);
 
   console.log("--- Successfully seeded events ---");
 
@@ -96,7 +75,7 @@ const init = async () => {
 
   // seed users
   const usersToSeed = users.map((user) => {
-    const email = user.contact.email;
+    const email = user.user.email;
     const eventsForUser = userToEventMapper[email];
     const eventIds = eventsForUser.map((eventForUser) => {
       const { id } = eventsFromDb.find((event) => {

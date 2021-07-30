@@ -10,7 +10,7 @@ const events = [
     country: "United Kingdom",
     organizer: "the determined protector",
     creator: "creator@gmail.com",
-    imageUrl: "",
+    imageUrl: "22",
   },
   {
     type: "Animals",
@@ -23,7 +23,7 @@ const events = [
     country: "United Kingdom",
     organizer: "the determined animal protector",
     creator: "creator@gmail.com",
-    imageUrl: "",
+    imageUrl: "22",
   },
   {
     type: "Education",
@@ -36,7 +36,7 @@ const events = [
     country: "United Kingdom",
     organizer: "the determined book protector",
     creator: "creator@gmail.com",
-    imageUrl: "",
+    imageUrl: "22",
   },
   {
     type: "Art_Culture",
@@ -50,7 +50,7 @@ const events = [
     country: "United Kingdom",
     organizer: "Rise Art",
     creator: "creator@gmail.com",
-    imageUrl: "",
+    imageUrl: "22",
   },
   {
     type: "Environmental",
@@ -64,7 +64,7 @@ const events = [
     country: "United Kingdom",
     organizer: "Grand Canyon Trust",
     creator: "creator@gmail.com",
-    imageUrl: "",
+    imageUrl: "22",
   },
   {
     type: "Health",
@@ -78,7 +78,7 @@ const events = [
     country: "United Kingdom",
     organizer: "Cancer Research Society",
     creator: "creator@gmail.com",
-    imageUrl: "",
+    imageUrl: "22",
   },
   {
     type: "Environmental",
@@ -92,7 +92,7 @@ const events = [
     country: "United Kingdom",
     organizer: "Grand Canyon Trust",
     creator: "creator@gmail.com",
-    imageUrl: "",
+    imageUrl: "22",
   },
 ];
 
