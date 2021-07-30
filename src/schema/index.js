@@ -1,26 +1,34 @@
 const { gql } = require("apollo-server");
 
 const typeDefs = gql`
-  type CharityItem {
+  type EventItem {
+    type:String!
     name: String!
-    password: String!
-    imageURL: String!
+    description: String!
+    day: Date!
+    street: String!
+    postcode: String!
+    organizer: String!
+    creator: String!
   }
 
-  #events will be define in js
-
-  type BusinessItem {
+  type UserItem {
+    type: String!
     name: String!
+    last_name: String
     password: String!
-    imageUrl: String!
+    imageUrl: String
   }
 
   type Contact {
     email: String!
     phone_number: String!
-    address: String!
-    socials: String!
-    bio: String!
+    street: String!
+    postcode:String!
+    city: String!
+    country:String!
+    socials: String
+    bio: String
   }
 
   type Interests {
