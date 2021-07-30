@@ -24,11 +24,19 @@ const eventSchema = new Schema({
   },
   postcode: {
     type: String,
+<<<<<<< HEAD
     required: true,
   },
   city: {
     type: String,
     required: true,
+=======
+    required: false,
+  },
+  city: {
+    type: String,
+    required: false,
+>>>>>>> f1928392cb3ee5f5a4ed6079aa3f11711c3eb29a
   },
   country: {
     type: String,
@@ -37,8 +45,12 @@ const eventSchema = new Schema({
   organizer: {
     type: String,
   },
+  creator: {
+    type: String,
+    required: true,
+  },
 
-  users: [
+  participants: [
     {
       type: Schema.Types.ObjectId,
       ref: "User",
