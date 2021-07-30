@@ -1,7 +1,5 @@
-const { User, Company, Charity } = require("../models");
+const { Event } = require("../models");
 
 module.exports = {
-  User,
-  Company,
-  Charity,
+  Event,
 };
