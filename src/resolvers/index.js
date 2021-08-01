@@ -1,18 +1,22 @@
+const login = require("./login");
+const signUp = require("./signUp");
+const createEvent = require("./createEvent");
+const updateEvent = require("./updateEvent");
+const deleteEvent = require("./deleteEvent");
 const events = require("./events");
-const user = require("./user");
-const createEventItemInput = require("./createEventItemInput");
-const updateEventItemInput = require("./updateEventItemInput");
-const createUserInput = "./createUserInput.js";
+const event = require("./event");
 
 const resolvers = {
   Query: {
     events,
-    user,
+    event,
   },
   Mutation: {
-    createEventItemInput,
-    updateEventItemInput,
-    createUserInput,
+    login,
+    signUp,
+    createEvent,
+    updateEvent,
+    deleteEvent,
   },
 };
 

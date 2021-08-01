@@ -1,12 +1,13 @@
 const { connect, disconnect } = require("../db");
-const Event = require("../models/event");
+const Event = require("../models/Event");
 const events = require("./events");
-const User = require("../models/user");
+const User = require("../models/User");
 const users = require("./users");
 
 const init = async () => {
   await connect();
 
+  // mapping participants (from User) to events
   const eventToParticipantMapper = {
     "Protect the rivers": ["customerservice@ikea.com"],
     "Protect the animals": ["customerservice@ikea.com"],
@@ -24,6 +25,7 @@ const init = async () => {
     "BUY ART, GIVE ART": ["art.fund@gmail.com"],
   };
 
+  //mapping events to users
   const userToEventMapper = {
     "jack.smith@gmail.com": ["Cancer Research UK"],
     "sarah.james@gmail.com": ["Grand Canyon Trust"],
@@ -73,7 +75,7 @@ const init = async () => {
 
   const eventsFromDb = await Event.find({});
 
-  // seed users
+  // seeds users
   const usersToSeed = users.map((user) => {
     const email = user.user.email;
     const eventsForUser = userToEventMapper[email];
@@ -92,28 +94,6 @@ const init = async () => {
   await User.insertMany(usersToSeed);
 
   console.log("--- Successfully seeded users ---");
-
-  // seeds companies
-
-  // const companiesToSeed = companies.map((company) => {
-  //   const companyName = company.business.company_name;
-  //   const eventsForCompany = companyToEventMapper[companyName];
-  //   const eventIds = eventsForCompany.map((eventForCompany) => {
-  //     const { id } = eventsFromDb.find((event) => {
-  //       return event.name === eventForCompany;
-  //     });
-  //     return id;
-  //   });
-  //   return {
-  //     ...company,
-  //     events: eventIds,
-  //   };
-  // });
-
-  // console.log(companiesToSeed);
-  // await Company.insertMany(companiesToSeed);
-
-  // console.log("--- Successfully seeded companies ---");
 
   // seeds users
 

@@ -1,12 +1,12 @@
 const { gql } = require("apollo-server");
 
 const typeDefs = gql`
-  type EventItem {
+  type Event {
     id: ID!
     type: String!
     name: String!
     description: String!
-    day: Date!
+    day: String!
     street: String!
     postcode: String!
     city: String!
@@ -16,7 +16,7 @@ const typeDefs = gql`
     imageUrl: String!
   }
 
-  type UserItem {
+  type User {
     id: ID!
     type: String!
     name: String!
@@ -46,12 +46,12 @@ const typeDefs = gql`
     user(id: ID!): User
   }
 
-  input CreateEventItemInput {
+  input EventInput {
     eventId: ID!
     type: String!
     name: String!
     description: String!
-    day: Date!
+    day: String!
     street: String!
     postcode: String!
     city: String!
@@ -60,20 +60,8 @@ const typeDefs = gql`
     creator: String!
     imageUrl: String!
   }
-  input UpdateEventItemInput {
-    menuItemId: ID!
-    menuId: ID!
-    type: String!
-    name: String!
-    day: Date!
-    street: String!
-    postcode: String!
-    city: String!
-    country: String!
-    organizer: String!
-    creator: String!
-  }
-  input CreateUserInput {
+
+  input UserInput {
     type: String!
     name: String!
     last_name: String
@@ -96,9 +84,11 @@ const typeDefs = gql`
   }
 
   type Mutation {
-    CreateEventItemInput(input: CreateEventItemInput!): EventItem!
-    UpdateEventItemInput(input: UpdateEventItemInput!): EventItem!
-    CreateUserInput(input: CreateUserInput!): User!
+    createEvent(input: EventInput!): Event!
+    updateEvent(input: EventInput!): Event!
+    deleteEvent(id: ID!): ID!
+    signUp(input: UserInput!): User!
+    login(input: UserInput!): User!
   }
 `;
 

@@ -1,5 +1,4 @@
 const { ApolloServer } = require("apollo-server");
-
 const db = require("./config/connection");
 
 const resolvers = require("./resolvers");
@@ -11,6 +10,7 @@ const server = new ApolloServer({
 });
 
 db.once("open", () => {
+  console.log("connected to db");
   server.listen().then(({ url }) => {
     console.log(`🚀  Server ready at ${url}`);
   });
