@@ -88,7 +88,7 @@ const users = [
       international: false,
       health: false,
       education: false,
-      art_culture: false,
+      art_culture: true,
     },
   },
   {
