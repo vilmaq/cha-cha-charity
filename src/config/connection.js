@@ -15,7 +15,7 @@ mongoose.connect(DB_URL, MONGOOSE_OPTIONS);
 
 module.exports = mongoose.connection;
 
-// module.exports = {
-//   DB_URL,
-//   MONGOOSE_OPTIONS,
-// };
+module.exports = {
+  DB_URL,
+  MONGOOSE_OPTIONS,
+};

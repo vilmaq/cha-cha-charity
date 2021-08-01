@@ -11,6 +11,7 @@ const events = [
     organizer: "the determined protector",
     creator: "creator@gmail.com",
     imageUrl: "22",
+    participants: ["61066f27652db3464bd253c5"],
   },
   {
     type: "Animals",
@@ -24,6 +25,7 @@ const events = [
     organizer: "the determined animal protector",
     creator: "creator@gmail.com",
     imageUrl: "22",
+    participants: ["61066f27652db3464bd253c5"],
   },
   {
     type: "Education",
@@ -37,6 +39,7 @@ const events = [
     organizer: "the determined book protector",
     creator: "creator@gmail.com",
     imageUrl: "22",
+    participants: ["61066f27652db3464bd253c5"],
   },
   {
     type: "Art_Culture",
@@ -51,6 +54,7 @@ const events = [
     organizer: "Rise Art",
     creator: "creator@gmail.com",
     imageUrl: "22",
+    participants: ["61066f27652db3464bd253c5"],
   },
   {
     type: "Environmental",
@@ -65,6 +69,7 @@ const events = [
     organizer: "Grand Canyon Trust",
     creator: "creator@gmail.com",
     imageUrl: "22",
+    participants: ["61066f27652db3464bd253c5"],
   },
   {
     type: "Health",
@@ -79,6 +84,7 @@ const events = [
     organizer: "Cancer Research Society",
     creator: "creator@gmail.com",
     imageUrl: "22",
+    participants: ["61066f27652db3464bd253c5"],
   },
   {
     type: "Environmental",
@@ -93,6 +99,7 @@ const events = [
     organizer: "Grand Canyon Trust",
     creator: "creator@gmail.com",
     imageUrl: "22",
+    participants: ["61066f27652db3464bd253c5"],
   },
 ];
 
