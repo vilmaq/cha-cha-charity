@@ -75,31 +75,35 @@ const init = async () => {
 
   console.log("--- Successfully seeded users ---");
 
-  // const usersFromDb = await User.find({});
-  // console.log("userFromDb");
+  const usersFromDb = await User.find({});
+  console.log("userFromDb");
 
   // // seeds participants
-  // const participantsToSeed = events.map((event) => {
-  //   const eventName = event.name;
-  //   const participantsForUser = eventToParticipantMapper[eventName];
-  //   // console.log(participantsForUser);
-  //   const participantIds = participantsForUser.map((participantForEvent) => {
-  //     const user = usersFromDb.find((participant) => {
-  //       return participant.user.email === participantForEvent;
-  //     });
-  //     return user["_id"];
-  //   });
-  //   return participantIds;
-  // });
-  // console.log("participantsToSeed");
-  // console.log(participantsToSeed);
-  // forEach;
-  // await Event.updateMany(
-  //   { name: events.name },
-  //   { $push: { participants: [...participantsToSeed] } }
-  // );
+  const participantsToSeed = eventsFromDb.map((event) => {
+    const eventName = event.name;
+    const participantsForUser = eventToParticipantMapper[eventName];
+    // console.log(participantsForUser);
+    const participantIds = participantsForUser.map((participantForEvent) => {
+      const user = usersFromDb.find((participant) => {
+        return participant.user.email === participantForEvent;
+      });
 
-  // console.log("--- Successfully seeded participants ---");
+      return user["_id"];
+    });
+
+    return { eventId: event._id, participants: participantIds };
+  });
+
+  const promises = participantsToSeed.map((each) => {
+    console.log("each:", each);
+    Event.updateOne(
+      { _id: each.eventId },
+      { $push: { participants: [...each.participants] } }
+    );
+  });
+  await Promise.all(promises);
+
+  console.log("--- Successfully seeded participants ---");
 
   // seeds users
 
