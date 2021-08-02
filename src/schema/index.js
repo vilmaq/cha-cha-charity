@@ -14,6 +14,7 @@ const typeDefs = gql`
     organizer: String!
     creator: String!
     imageUrl: String!
+    participants: [User]
   }
 
   type User {
