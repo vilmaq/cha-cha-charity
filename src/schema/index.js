@@ -40,6 +40,11 @@ const typeDefs = gql`
     art_culture: Boolean
   }
 
+  type Auth {
+    token: ID!
+    user: User!
+  }
+
   type Query {
     events(sortBy: String, top: Int): [Event]
     event(id: ID!): Event
