@@ -10,18 +10,18 @@ const login = async (_, { input }) => {
     throw new AuthenticationError("User does not exist");
   }
 
-  // const isValidPassword = await user.validatePassword(input.password);
+  const isValidPassword = await user.validatePassword(input.password);
 
-  // if (!isValidPassword) {
-  //   throw new AuthenticationError("Failed login");
-  // }
+  if (!isValidPassword) {
+    throw new AuthenticationError("Failed login");
+  }
 
-  // const { firstName, lastName, email, _id: id } = user;
+  const { firstName, lastName, email, _id: id } = user;
 
-  // const token = signToken({ firstName, lastName, email, id });
+  const token = signToken({ firstName, lastName, email, id });
 
   return {
-    // token,
+    token,
     user,
   };
 };
