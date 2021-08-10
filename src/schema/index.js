@@ -12,7 +12,7 @@ const typeDefs = gql`
     city: String!
     country: String!
     organizer: String!
-    creator: String!
+    creator: User!
     imageUrl: String!
     participants: [User]
   }
@@ -58,7 +58,7 @@ const typeDefs = gql`
     city: String!
     country: String!
     organizer: String!
-    creator: String!
+    creator: User!
     imageUrl: String!
   }
 

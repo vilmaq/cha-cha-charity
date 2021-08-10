@@ -47,6 +47,17 @@ db.once("open", async () => {
       "customerservice@ikea.com": ["Cancer Research UK"],
     };
 
+    //mapping events to users
+    const eventToCreatorMapper = {
+      "Protect the rivers": "jack.smith@gmail.com",
+      "Protect the animals": "sarah.james@gmail.com",
+      "Protect the books": "roxette.brooks@gmail.com",
+      "BUY ART, GIVE ART": "art.fund@gmail.com",
+      "Arizona Poised to Permit Canyon Uranium Mine": "living.lands@gmai.com",
+      "Grand Canyon Trust": "customerservice@morrisons.com",
+      "Cancer Research UK": "customerservice@morrisons.com",
+    };
+
     // clear database
     await Event.deleteMany({});
     await User.deleteMany({});
@@ -78,8 +89,23 @@ db.once("open", async () => {
 
     console.log("--- Successfully seeded users ---");
 
-    const usersFromDb = await User.find({});
+    const creatorsToSeed = eventsFromDb.map(async (event) => {
+      console.log("event", event);
+      const eventName = event.name;
+      const creatorForEvent = eventToCreatorMapper[eventName];
+      const creator = await User.findOne({ email: creatorForEvent });
+      console.log("creator here", creator["_id"]);
+      const eventIds = await Event.findByIdAndUpdate(
+        event["_id"],
 
+        {
+          $set: { creator: creator["_id"] },
+        }
+      );
+    });
+    console.log(eventIds);
+
+    const usersFromDb = await User.find({});
     // // seeds participants
     const participantsToSeed = eventsFromDb.map((event) => {
       const eventName = event.name;
