@@ -38,8 +38,8 @@ const eventSchema = new Schema({
     type: String,
   },
   creator: {
-    type: String,
-    required: true,
+    type: Schema.Types.ObjectId,
+    ref: "User",
   },
   imageUrl: {
     type: String,
