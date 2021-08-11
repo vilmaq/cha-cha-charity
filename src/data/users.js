@@ -18,7 +18,7 @@ const users = [
     international: true,
     health: true,
     education: true,
-    art_culture: true,
+    art_culture: false,
   },
 
   {
