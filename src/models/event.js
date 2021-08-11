@@ -12,7 +12,7 @@ const eventSchema = new Schema({
   },
   description: {
     type: String,
-    required: true,
+    required: false,
   },
   day: {
     type: String,
