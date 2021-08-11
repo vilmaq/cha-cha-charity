@@ -63,7 +63,7 @@ const typeDefs = gql`
     city: String!
     country: String!
     organizer: String!
-    creator: User!
+    creator: ID!
     imageUrl: String!
   }
 
