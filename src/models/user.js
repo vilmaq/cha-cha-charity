@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 
+const { hashPassword, validatePassword } = require("../utils/password");
+
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
@@ -79,5 +81,9 @@ const userSchema = new Schema({
 });
 
 const User = mongoose.model("User", userSchema);
+
+userSchema.pre("save", hashPassword);
+
+userSchema.methods.validatePassword = validatePassword;
 
 module.exports = User;

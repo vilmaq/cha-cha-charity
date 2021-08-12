@@ -22,13 +22,13 @@ const typeDefs = gql`
     type: String!
     fullName: String!
     password: String!
-    imageUrl: String
     email: String!
     phoneNumber: String!
     street: String!
     postcode: String!
     city: String!
     country: String!
+    imageUrl: String
     bio: String
     animals: Boolean
     environmental: Boolean
@@ -71,9 +71,24 @@ const typeDefs = gql`
   }
 
   input SignUpInput {
+    id: ID
+    type: String!
     fullName: String!
     password: String!
     email: String!
+    phoneNumber: String!
+    street: String!
+    postcode: String!
+    city: String!
+    country: String!
+    imageUrl: String
+    bio: String
+    animals: Boolean
+    environmental: Boolean
+    international: Boolean
+    health: Boolean
+    education: Boolean
+    artCulture: Boolean
   }
 
   type Mutation {
