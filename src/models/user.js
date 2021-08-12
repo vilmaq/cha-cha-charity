@@ -20,7 +20,7 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
-  phone_number: {
+  phoneNumber: {
     type: String,
     required: true,
   },
@@ -66,7 +66,7 @@ const userSchema = new Schema({
     type: Boolean,
     default: false,
   },
-  art_culture: {
+  artCulture: {
     type: Boolean,
     default: false,
   },

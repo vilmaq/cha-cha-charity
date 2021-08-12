@@ -24,7 +24,7 @@ const typeDefs = gql`
     password: String!
     imageUrl: String
     email: String!
-    phone_number: String!
+    phoneNumber: String!
     street: String!
     postcode: String!
     city: String!
@@ -35,7 +35,7 @@ const typeDefs = gql`
     international: Boolean
     health: Boolean
     education: Boolean
-    art_culture: Boolean
+    artCulture: Boolean
   }
 
   type Auth {
