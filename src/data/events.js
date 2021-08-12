@@ -9,8 +9,8 @@ const events = [
     city: "Birmingham",
     country: "United Kingdom",
     organizer: "the determined protector",
-    creator: "creator@gmail.com",
     imageUrl: "22",
+    participants: [],
   },
   {
     type: "Animals",
@@ -22,8 +22,8 @@ const events = [
     city: "Birmingham",
     country: "United Kingdom",
     organizer: "the determined animal protector",
-    creator: "creator@gmail.com",
     imageUrl: "22",
+    participants: [],
   },
   {
     type: "Education",
@@ -35,8 +35,8 @@ const events = [
     city: "Birmingham",
     country: "United Kingdom",
     organizer: "the determined book protector",
-    creator: "creator@gmail.com",
     imageUrl: "22",
+    participants: [],
   },
   {
     type: "Art_Culture",
@@ -49,8 +49,8 @@ const events = [
     city: "Birmingham",
     country: "United Kingdom",
     organizer: "Rise Art",
-    creator: "creator@gmail.com",
     imageUrl: "22",
+    participants: [],
   },
   {
     type: "Environmental",
@@ -63,8 +63,8 @@ const events = [
     city: "Birmingham",
     country: "United Kingdom",
     organizer: "Grand Canyon Trust",
-    creator: "creator@gmail.com",
     imageUrl: "22",
+    participants: [],
   },
   {
     type: "Health",
@@ -77,8 +77,8 @@ const events = [
     city: "Birmingham",
     country: "United Kingdom",
     organizer: "Cancer Research Society",
-    creator: "creator@gmail.com",
     imageUrl: "22",
+    participants: [],
   },
   {
     type: "Environmental",
@@ -91,8 +91,8 @@ const events = [
     city: "Birmingham",
     country: "United Kingdom",
     organizer: "Grand Canyon Trust",
-    creator: "creator@gmail.com",
     imageUrl: "22",
+    participants: [],
   },
 ];
 

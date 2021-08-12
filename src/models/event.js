@@ -12,10 +12,10 @@ const eventSchema = new Schema({
   },
   description: {
     type: String,
-    required: true,
+    required: false,
   },
   day: {
-    type: Date,
+    type: String,
     required: true,
   },
   street: {
@@ -38,8 +38,8 @@ const eventSchema = new Schema({
     type: String,
   },
   creator: {
-    type: String,
-    required: true,
+    type: Schema.Types.ObjectId,
+    ref: "User",
   },
   imageUrl: {
     type: String,

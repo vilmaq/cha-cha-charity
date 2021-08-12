@@ -1,22 +1,23 @@
 const { gql } = require("apollo-server");
 
 const typeDefs = gql`
-  type EventItem {
+  type Event {
     id: ID!
     type: String!
     name: String!
     description: String!
-    day: Date!
+    day: String!
     street: String!
     postcode: String!
     city: String!
     country: String!
     organizer: String!
-    creator: String!
+    creator: User!
     imageUrl: String!
+    participants: [User]
   }
 
-  type UserItem {
+  type User {
     id: ID!
     type: String!
     name: String!
@@ -39,6 +40,11 @@ const typeDefs = gql`
     art_culture: Boolean
   }
 
+  type Auth {
+    token: ID!
+    user: User!
+  }
+
   type Query {
     events(sortBy: String, top: Int): [Event]
     event(id: ID!): Event
@@ -46,34 +52,22 @@ const typeDefs = gql`
     user(id: ID!): User
   }
 
-  input CreateEventItemInput {
+  input EventInput {
     eventId: ID!
     type: String!
     name: String!
     description: String!
-    day: Date!
+    day: String!
     street: String!
     postcode: String!
     city: String!
     country: String!
     organizer: String!
-    creator: String!
+    creator: ID!
     imageUrl: String!
   }
-  input UpdateEventItemInput {
-    menuItemId: ID!
-    menuId: ID!
-    type: String!
-    name: String!
-    day: Date!
-    street: String!
-    postcode: String!
-    city: String!
-    country: String!
-    organizer: String!
-    creator: String!
-  }
-  input CreateUserInput {
+
+  input UserInput {
     type: String!
     name: String!
     last_name: String
@@ -96,9 +90,11 @@ const typeDefs = gql`
   }
 
   type Mutation {
-    CreateEventItemInput(input: CreateEventItemInput!): EventItem!
-    UpdateEventItemInput(input: UpdateEventItemInput!): EventItem!
-    CreateUserInput(input: CreateUserInput!): User!
+    createEvent(input: EventInput!): Event!
+    updateEvent(input: EventInput!): Event!
+    deleteEvent(id: ID!): ID!
+    signUp(input: UserInput!): User!
+    login(input: UserInput!): User!
   }
 `;
 
