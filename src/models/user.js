@@ -1,25 +1,20 @@
 const mongoose = require("mongoose");
+
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
   type: {
     type: String,
+    enum: ["company", "participant", "creator"],
     required: true,
   },
-  name: {
+  fullName: {
     type: String,
     required: true,
-  },
-  last_name: {
-    type: String,
   },
   password: {
     type: String,
     required: true,
-  },
-  imageUrl: {
-    type: String,
-    required: false,
   },
   email: {
     type: String,
@@ -45,7 +40,7 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
-  socials: {
+  imageUrl: {
     type: String,
   },
   bio: {
@@ -53,29 +48,28 @@ const userSchema = new Schema({
   },
   animals: {
     type: Boolean,
-    required: true,
+    default: false,
   },
   environmental: {
     type: Boolean,
-    required: true,
+    default: false,
   },
   international: {
     type: Boolean,
-    required: true,
+    default: false,
   },
   health: {
     type: Boolean,
-    required: true,
+    default: false,
   },
   education: {
     type: Boolean,
-    required: true,
+    default: false,
   },
   art_culture: {
     type: Boolean,
-    required: true,
+    default: false,
   },
-
   events: [
     {
       type: Schema.Types.ObjectId,
@@ -83,5 +77,7 @@ const userSchema = new Schema({
     },
   ],
 });
+
 const User = mongoose.model("User", userSchema);
+
 module.exports = User;

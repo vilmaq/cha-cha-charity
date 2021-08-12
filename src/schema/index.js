@@ -18,10 +18,9 @@ const typeDefs = gql`
   }
 
   type User {
-    id: ID!
+    id: ID
     type: String!
-    name: String!
-    last_name: String
+    fullName: String!
     password: String!
     imageUrl: String
     email: String!
@@ -30,7 +29,6 @@ const typeDefs = gql`
     postcode: String!
     city: String!
     country: String!
-    socials: String
     bio: String
     animals: Boolean
     environmental: Boolean
@@ -42,7 +40,7 @@ const typeDefs = gql`
 
   type Auth {
     token: ID!
-    user: User!
+    user: User
   }
 
   type Query {
@@ -67,34 +65,23 @@ const typeDefs = gql`
     imageUrl: String!
   }
 
-  input UserInput {
-    type: String!
-    name: String!
-    last_name: String
+  input LoginInput {
     password: String!
-    imageUrl: String
     email: String!
-    phone_number: String!
-    street: String!
-    postcode: String!
-    city: String!
-    country: String!
-    socials: String
-    bio: String
-    animals: Boolean!
-    environmental: Boolean!
-    international: Boolean!
-    health: Boolean!
-    education: Boolean!
-    art_culture: Boolean!
+  }
+
+  input SignUpInput {
+    fullName: String!
+    password: String!
+    email: String!
   }
 
   type Mutation {
     createEvent(input: EventInput!): Event!
     updateEvent(input: EventInput!): Event!
     deleteEvent(id: ID!): ID!
-    signUp(input: UserInput!): User!
-    login(input: UserInput!): User!
+    signUp(input: SignUpInput!): Auth
+    login(input: LoginInput!): Auth
   }
 `;
 
