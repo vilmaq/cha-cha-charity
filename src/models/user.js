@@ -82,7 +82,11 @@ const userSchema = new Schema({
 
 const User = mongoose.model("User", userSchema);
 
+//hook password before creating the user
+
 userSchema.pre("save", hashPassword);
+
+//method to validate the password
 
 userSchema.methods.validatePassword = validatePassword;
 

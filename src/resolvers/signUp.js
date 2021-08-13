@@ -16,7 +16,16 @@ const signUp = async (_, { input }) => {
     country,
   } = user;
 
-  const token = signToken({ fullName, email, id });
+  const token = signToken({
+    fullName,
+    email,
+    id,
+    password,
+    street,
+    postcode,
+    phoneNumber,
+    country,
+  });
 
   return {
     token,
