@@ -103,7 +103,6 @@ db.once("open", async () => {
         }
       );
     });
-    console.log(eventIds);
 
     const usersFromDb = await User.find({});
     // // seeds participants

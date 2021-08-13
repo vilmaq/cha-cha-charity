@@ -7,7 +7,7 @@ const Schema = mongoose.Schema;
 const userSchema = new Schema({
   type: {
     type: String,
-    enum: ["company", "participant", "creator"],
+    enum: ["Volunteer", "Business", "Charity"],
     required: true,
   },
   fullName: {

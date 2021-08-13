@@ -60,12 +60,12 @@ const users = [
   },
 
   {
-    type: "art_culture",
+    type: "Business",
     fullName: "Art Fund",
     password: "4444",
     imageUrl: "image.png",
     email: "art.fund@gmail.com",
-    phone_number: "0203 757 9772",
+    phoneNumber: "0203 757 9772",
     street: "New Street",
     postcode: "B18 NN",
     city: "Birmingham",
@@ -80,7 +80,7 @@ const users = [
   },
 
   {
-    type: "environmental",
+    type: "Business",
     fullName: "Living Lands and Waters",
     password: "5552",
     imageUrl: "image.png",
@@ -100,7 +100,7 @@ const users = [
   },
 
   {
-    type: "Supermarket",
+    type: "Business",
     fullName: "Morrisons",
     password: "Password123",
     email: "customerservice@morrisons.com",
@@ -119,11 +119,11 @@ const users = [
   },
 
   {
-    type: "Furniture",
-    FullName: "IKEA",
+    type: "Business",
+    fullName: "IKEA",
     password: "Password222",
     email: "customerservice@ikea.com",
-    phone_number: "0123455442",
+    phoneNumber: "0123455442",
     street: "New Street",
     postcode: "B18 NN",
     city: "Birmingham",
