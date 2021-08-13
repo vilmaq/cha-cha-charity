@@ -90,11 +90,9 @@ db.once("open", async () => {
     console.log("--- Successfully seeded users ---");
 
     const creatorsToSeed = eventsFromDb.map(async (event) => {
-      console.log("event", event);
       const eventName = event.name;
       const creatorForEvent = eventToCreatorMapper[eventName];
       const creator = await User.findOne({ email: creatorForEvent });
-      console.log("creator here", creator["_id"]);
       const eventIds = await Event.findByIdAndUpdate(
         event["_id"],
 
