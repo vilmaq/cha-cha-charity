@@ -11,7 +11,7 @@ const signUp = async (_, { input }) => {
     _id: id,
     password,
     phoneNumber,
-    city
+    city,
     street,
     postcode,
     country,
@@ -26,7 +26,7 @@ const signUp = async (_, { input }) => {
     postcode,
     phoneNumber,
     country,
-    city
+    city,
   });
 
   return {
