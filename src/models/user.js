@@ -1,31 +1,28 @@
 const mongoose = require("mongoose");
+
+const { hashPassword, validatePassword } = require("../utils/password");
+
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
   type: {
     type: String,
+    enum: ["Volunteer", "Business", "Charity"],
     required: true,
   },
-  name: {
+  fullName: {
     type: String,
     required: true,
-  },
-  last_name: {
-    type: String,
   },
   password: {
     type: String,
     required: true,
   },
-  imageUrl: {
-    type: String,
-    required: false,
-  },
   email: {
     type: String,
     required: true,
   },
-  phone_number: {
+  phoneNumber: {
     type: String,
     required: true,
   },
@@ -45,7 +42,7 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
-  socials: {
+  imageUrl: {
     type: String,
   },
   bio: {
@@ -53,29 +50,28 @@ const userSchema = new Schema({
   },
   animals: {
     type: Boolean,
-    required: true,
+    default: false,
   },
   environmental: {
     type: Boolean,
-    required: true,
+    default: false,
   },
   international: {
     type: Boolean,
-    required: true,
+    default: false,
   },
   health: {
     type: Boolean,
-    required: true,
+    default: false,
   },
   education: {
     type: Boolean,
-    required: true,
+    default: false,
   },
-  art_culture: {
+  artCulture: {
     type: Boolean,
-    required: true,
+    default: false,
   },
-
   events: [
     {
       type: Schema.Types.ObjectId,
@@ -83,5 +79,15 @@ const userSchema = new Schema({
     },
   ],
 });
+
 const User = mongoose.model("User", userSchema);
+
+//hook password before creating the user
+
+userSchema.pre("save", hashPassword);
+
+//method to validate the password
+
+userSchema.methods.validatePassword = validatePassword;
+
 module.exports = User;

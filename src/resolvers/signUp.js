@@ -1,15 +1,36 @@
 const { User } = require("../models");
- const { signToken } = require("../utils/auth");
+const { signToken } = require("../utils/auth");
 
 const signUp = async (_, { input }) => {
+  console.log(input);
   const user = await User.create(input);
 
-  const { firstName, lastName, email, _id: id } = user;
+  const {
+    fullName,
+    email,
+    _id: id,
+    password,
+    phoneNumber,
+    city,
+    street,
+    postcode,
+    country,
+  } = user;
 
-  const token = signToken({ firstName, lastName, email, id });
+  const token = signToken({
+    fullName,
+    email,
+    id,
+    password,
+    street,
+    postcode,
+    phoneNumber,
+    country,
+    city,
+  });
 
   return {
-   token,
+    token,
     user,
   };
 };
