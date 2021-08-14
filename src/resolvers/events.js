@@ -14,7 +14,6 @@ const events = async (_, { userId }) => {
       .exec();
     console.log(JSON.stringify(events, null, 2));
   }
-  console.log(events);
   return events;
 };
 
