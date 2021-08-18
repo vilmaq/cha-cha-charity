@@ -50,6 +50,12 @@ const typeDefs = gql`
     user(id: ID!): User
   }
 
+  enum TaskStateEnum {
+    VOLUNTEER
+    BUSINESS
+    CHARITY
+  }
+
   input EventInput {
     eventId: ID!
     type: String!
@@ -63,12 +69,6 @@ const typeDefs = gql`
     organizer: String!
     creator: ID!
     imageUrl: String!
-  }
-
-  enum TaskStateEnum {
-    ASSIGNED
-    UNASSIGNED
-    IN_PROGRESS
   }
 
   input LoginInput {
