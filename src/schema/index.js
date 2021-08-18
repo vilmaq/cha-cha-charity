@@ -65,14 +65,19 @@ const typeDefs = gql`
     imageUrl: String!
   }
 
+  enum TaskStateEnum {
+    ASSIGNED
+    UNASSIGNED
+    IN_PROGRESS
+  }
+
   input LoginInput {
     password: String!
     email: String!
   }
-
   input SignUpInput {
     id: ID
-    type: String!
+    type: TaskStateEnumType!
     fullName: String!
     password: String!
     email: String!
