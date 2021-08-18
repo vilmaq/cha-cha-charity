@@ -77,7 +77,7 @@ const typeDefs = gql`
   }
   input SignUpInput {
     id: ID
-    type: TaskStateEnumType!
+    type: TaskStateEnum!
     fullName: String!
     password: String!
     email: String!
