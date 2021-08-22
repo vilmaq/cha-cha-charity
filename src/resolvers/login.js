@@ -16,9 +16,9 @@ const login = async (_, { input }) => {
     throw new AuthenticationError("Failed login");
   }
 
-  const { firstName, lastName, email, _id: id } = user;
+  const { password, email, _id: id } = user;
 
-  const token = signToken({ firstName, lastName, email, id });
+  const token = signToken({ password, email, id });
 
   return {
     token,
