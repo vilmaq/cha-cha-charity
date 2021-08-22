@@ -1,5 +1,6 @@
 const login = require("./login");
 const signUp = require("./signUp");
+const signUpToEvent = require("./signUpToEvent")
 const createEvent = require("./createEvent");
 const updateEvent = require("./updateEvent");
 const deleteEvent = require("./deleteEvent");
@@ -17,6 +18,7 @@ const resolvers = {
     createEvent,
     updateEvent,
     deleteEvent,
+    signUpToEvent
   },
 };
 
