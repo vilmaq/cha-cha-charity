@@ -13,7 +13,7 @@ const typeDefs = gql`
     country: String!
     organizer: String!
     creator: User!
-    imageUrl: String!
+    imageUrl: String
     participants: [User]
   }
 
@@ -50,6 +50,12 @@ const typeDefs = gql`
     user(id: ID!): User
   }
 
+  enum TaskStateEnum {
+    VOLUNTEER
+    BUSINESS
+    CHARITY
+  }
+
   input EventInput {
     eventId: ID!
     type: String!
@@ -62,7 +68,7 @@ const typeDefs = gql`
     country: String!
     organizer: String!
     creator: ID!
-    imageUrl: String!
+    imageUrl: String
   }
 
   input LoginInput {
@@ -96,6 +102,7 @@ const typeDefs = gql`
     updateEvent(input: EventInput!): Event!
     deleteEvent(id: ID!): ID!
     signUp(input: SignUpInput!): Auth
+    signUpToEvent(userId: ID!, eventId: ID!): Auth
     login(input: LoginInput!): Auth
   }
 `;
