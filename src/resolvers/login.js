@@ -13,7 +13,7 @@ const login = async (_, { input }) => {
   const isValidPassword = await user.validatePassword(input.password);
 
   if (!isValidPassword) {
-    throw new AuthenticationError("Failed login");
+    throw new AuthenticationError("Invalid password");
   }
 
   const { password, email, _id: id } = user;
