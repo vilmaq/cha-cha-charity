@@ -3,6 +3,7 @@ const { signToken } = require("../utils/auth");
 
 const signUp = async (_, { input }) => {
   console.log(input);
+  console.log("signup here");
   const user = await User.create(input);
 
   const {

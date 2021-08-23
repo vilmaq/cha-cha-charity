@@ -1,6 +1,7 @@
 const { gql } = require("apollo-server");
 
 const typeDefs = gql`
+  scalar Upload
   type Event {
     id: ID!
     type: String!
@@ -13,10 +14,15 @@ const typeDefs = gql`
     country: String!
     organizer: String!
     creator: User!
-    imageUrl: String
     participants: [User]
+    # image: Image
   }
 
+  input Image {
+    name: String
+    size: Int
+    type: String
+  }
   type User {
     id: ID
     type: String!
@@ -93,6 +99,7 @@ const typeDefs = gql`
 
   type Mutation {
     createEvent(input: EventInput!): Event!
+    imageUpload(input: Image): Upload
     updateEvent(input: EventInput!): Event!
     deleteEvent(id: ID!): ID!
     signUp(input: SignUpInput!): Auth

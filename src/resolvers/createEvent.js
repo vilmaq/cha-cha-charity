@@ -1,72 +1,52 @@
-// const { AuthenticationError } = require("apollo-server");
+const { AuthenticationError } = require("apollo-server");
+const { Event, User } = require("../models");
+const express = require("express");
+const { ApolloServer, gql } = require("apollo-server-express");
+const { GraphQLUpload, graphqlUploadExpress } = require("graphql-upload");
+// const { finished } = require("stream/promises");
 
-// const { Event, User } = require("../models");
+const createEvent = async (_, { input }, context) => {
+  if (context.user) {
+    const {
+      type,
+      name,
+      description,
+      day,
+      street,
+      postcode,
+      city,
+      country,
+      organizer,
+      creator,
+      phone_number,
+      imageUrl,
+    } = input;
 
-// const createEvent = async (_, { input }, context) => {
-//   if (context.user) {
-//     const {
-//       name,
-//       last_name,
-//       password,
-//       imageUrl,
-//       street,
-//       phone_number,
-//       postcode,
-//       city,
-//       country,
-//       email,
-//       socials,
-//       bio,
-//       animals,
-//       environmental,
-//       international,
-//       health,
-//       education,
-//       art_culture,
-//     } = input;
-
-//     const user = await User.create({
-//       name: [],
-//       last_name: [],
-//       password: [],
-//       imageUrl: [],
-//       street: [],
-//       phone_number: [],
-//       postcode: [],
-//       city: [],
-//       country: [],
-//       email: [],
-//       socials: [],
-//       bio: [],
-//       animals: [],
-//       environmental: [],
-//       international: [],
-//       health: [],
-//       education: [],
-//       art_culture: [],
-//     });
-
-//     return await Event.create({
-//       name,
-//       day,
-//       postCode,
-//       street,
-//       city,
-//       country,
-//       organizer,
-//       creator,
-//       imageUrl,
-//       description,
-//       user,
-//       user: context.user.id,
-//     });
-//   } else {
-//     throw new AuthenticationError("Not authorized");
-//   }
-// };
-
-// // id: "123",
-// // title: "New Event",
-// // content: "This is a new Event!!",
-
-// module.exports = createEvent;
+    if (user === context.user.id) {
+      const event = await Event.create({
+        type,
+        name,
+        description,
+        day,
+        street,
+        postcode,
+        city,
+        country,
+        organizer,
+        creator,
+        phone_number,
+        imageUrl,
+      });
+      return event;
+    } else {
+      throw new AuthenticationError(
+        "User not authorised to perform this action."
+      );
+    }
+  } else {
+    throw new AuthenticationError(
+      "User not authorised to perform this action."
+    );
+  }
+};
+module.exports = createEvent;
