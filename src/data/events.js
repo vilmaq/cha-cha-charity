@@ -93,6 +93,21 @@ const events = [
     type: "Environmental",
     name: "Volunteer Litter Picking",
     description:
+      "I've added this event to add users to while I'm seeding charities and businesses",
+    day: "2022-09-12",
+    street: "3 River Brook Drive",
+    postcode: "B30 2SH",
+    city: "Stirchley",
+    country: "United Kingdom",
+    organizer: "Shrek",
+    imageUrl:
+      "https://images.unsplash.com/photo-1594466179447-cd9892076389?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1990&q=80",
+    participants: [],
+  },
+  {
+    type: "Environmental",
+    name: "Placeholder Event",
+    description:
       "Join us for a spot of litter picking across the Ten Acres site. \n We will meet up outsdie riverbrook medical centre on the field. Children are welcome but keep little ones to the pathways due to the potential hazards in the woodland. \n\n(When restrictions ease you can just turn up but right now we need to ensure numbers are kept to keep restrictions) \n\nPlease let us know if you have your own litter picking tool (we have a limited supply for those that do not).",
     day: "2022-09-12",
     street: "3 River Brook Drive",
