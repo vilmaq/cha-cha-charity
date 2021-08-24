@@ -93,7 +93,7 @@ const events = [
     type: "Environmental",
     name: "Volunteer Litter Picking",
     description:
-      "Join us for a spot of litter picking across the Ten Acres site. We will meet up outsdie riverbrook medical centre on the field. Children are welcome but keep little ones to the pathways due to the potential hazards in the woodland. (When restrictions ease you can just turn up but right now we need to ensure numbers are kept to keep restrictions) Please let us know if you have your own litter picking tool (we have a limited supply for those that do not).",
+      "Join us for a spot of litter picking across the Ten Acres site. \n We will meet up outsdie riverbrook medical centre on the field. Children are welcome but keep little ones to the pathways due to the potential hazards in the woodland. \n\n(When restrictions ease you can just turn up but right now we need to ensure numbers are kept to keep restrictions) \n\nPlease let us know if you have your own litter picking tool (we have a limited supply for those that do not).",
     day: "2022-09-12",
     street: "3 River Brook Drive",
     postcode: "B30 2SH",
