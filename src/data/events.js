@@ -1,16 +1,17 @@
 const events = [
   {
     type: "Environmental",
-    name: "Protect the rivers",
-    description: "Protecting all the rivers of the world",
-    day: "2022-05-02",
-    street: "New Street",
-    postcode: "B2 3DF",
-    city: "Birmingham",
+    name: "Photography workshop by Aspire West Suessex",
+    description:
+      "Join Aspire West Sussex for a bitesize workshop on 'Photography: Framing Petworth - Pattern and Form' in the beautiful setting of Petworth Park. The 'Framing Petworth' series of field photography workshops provide a photographic exploration of the stunning grounds of Petworth House, following a variety of creative themes. Workshops are designed to be enjoyable to all, regardless of your level of photographic experience, knowledge or camera-type.",
+    day: "2021-09-02",
+    street: "Petworth House and Park",
+    postcode: "GU28 9LR",
+    city: "Petworth",
     country: "United Kingdom",
-    organizer: "the determined protector",
+    organizer: "National Trust - Petworth House and Park",
     imageUrl:
-      "https://images.unsplash.com/photo-1590333748338-d629e4564ad9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1418&q=80",
+      "https://images.unsplash.com/photo-1500027419059-afa3360ead5d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
     participants: [],
   },
   {
