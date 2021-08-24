@@ -1,5 +1,27 @@
-const deleteEvent = () => {
-  return "123";
+const { AuthenticationError } = require("apollo-server-express");
+const { Event, User } = require("../models");
+
+const deleteEvent = async (_, { eventId }, context) => {
+  // check if the user is in context
+  if (context.user) {
+    const { id } = context.user;
+
+    const user = await User.findByIdAndUpdate(
+      id,
+      {
+        $pull: {
+          savedEvents: { eventId },
+        },
+      },
+      { new: true }
+    ).populate("savedEvents");
+
+    return user;
+  } else {
+    throw new AuthenticationError(
+      "You are not authorized to perform this operation"
+    );
+  }
 };
 
 module.exports = deleteEvent;
