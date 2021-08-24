@@ -9,10 +9,10 @@ db.once("open", async () => {
   try {
     // mapping participants (from User) to events
     const eventToParticipantMapper = {
-      "Photography workshop by Aspire West Suessex": [
+      "Photography workshop by Aspire West Sussex": [
         "customerservice@ikea.com",
       ],
-      "Protect the animals": ["customerservice@ikea.com"],
+      "RSPCA Fun Dog Show": ["customerservice@ikea.com"],
       "Protect the books": ["customerservice@ikea.com"],
       "Cheltenham 10k 2021": [
         "jack.smith@gmail.com",
@@ -51,8 +51,8 @@ db.once("open", async () => {
 
     //mapping events to users
     const eventToCreatorMapper = {
-      "Photography workshop by Aspire West Suessex": "jack.smith@gmail.com",
-      "Protect the animals": "sarah.james@gmail.com",
+      "Photography workshop by Aspire West Sussex": "jack.smith@gmail.com",
+      "RSPCA Fun Dog Show": "sarah.james@gmail.com",
       "Protect the books": "roxette.brooks@gmail.com",
       "BUY ART, GIVE ART": "art.fund@gmail.com",
       "Arizona Poised to Permit Canyon Uranium Mine": "living.lands@gmai.com",

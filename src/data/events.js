@@ -16,15 +16,17 @@ const events = [
   },
   {
     type: "Animals",
-    name: "Protect the animals",
-    description: "Protecting all the animals of the world",
-    day: "2022-05-02",
-    street: "New Street",
-    postcode: "B2 3DF",
-    city: "Birmingham",
+    name: "Fun Dog Show",
+    description:
+      "Join us again on Sunday 5th September 11.00am at Sandall Park to celebrate our wonderful pets! The RSPCA annual Fun Dog Show is back and it promises to be a woofully great day. Sponsored by Hannah's Happy Hounds the event will have our usual classes for your dog to enter, including: 'Smiliest Face','Waggiest Tail','Rescue Dog 2021','Junior Handler','Perfect Pup (under 1 year)','Young at Heart (7 - 11 years)','Golden Oldie (12 years +)','Bonniest Lass','Handsomest Lad','Best in Show'",
+    day: "2021-10-12",
+    street: "Thorne Road",
+    postcode: "DN2 5DY",
+    city: "Doncaster",
     country: "United Kingdom",
-    organizer: "the determined animal protector",
-    imageUrl: "22",
+    organizer: "RSPCA Doncaster",
+    imageUrl:
+      "https://images.unsplash.com/photo-1494947665470-20322015e3a8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
     participants: [],
   },
   {
