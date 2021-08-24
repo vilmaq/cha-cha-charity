@@ -6,23 +6,22 @@
 //   if (context.user) {
 //     const {
 //       name,
-//       last_name,
+//       fullName,
 //       password,
 //       imageUrl,
 //       street,
-//       phone_number,
+//       phoneNumber,
 //       postcode,
 //       city,
 //       country,
 //       email,
-//       socials,
 //       bio,
 //       animals,
 //       environmental,
 //       international,
 //       health,
 //       education,
-//       art_culture,
+//       artCulture,
 //     } = input;
 
 //     const user = await User.create({
