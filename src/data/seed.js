@@ -12,39 +12,37 @@ db.once("open", async () => {
       "Photography workshop by Aspire West Sussex": [
         "customerservice@ikea.com",
       ],
-      "RSPCA Fun Dog Show": ["customerservice@ikea.com"],
-      "Protect the books": ["customerservice@ikea.com"],
+      "Fun Dog Show": ["customerservice@ikea.com"],
+      "The Brilliant Breakfast 2021": ["customerservice@ikea.com"],
       "Cheltenham 10k 2021": [
         "jack.smith@gmail.com",
         "customerservice@ikea.com",
       ],
-      "Grand Canyon Trust": [
+      "Community Tree Planting": [
         "sarah.james@gmail.com",
         "customerservice@morrisons.com",
         "living.lands@gmai.com",
       ],
-      "Arizona Poised to Permit Canyon Uranium Mine": [
+      "Volunteer Litter Picking": [
         "roxette.brooks@gmail.com",
         "living.lands@gmai.com",
       ],
-      "BUY ART, GIVE ART": ["art.fund@gmail.com"],
+      "The Way Ahead": ["art.fund@gmail.com"],
     };
 
     //mapping events to users
     const userToEventMapper = {
       "jack.smith@gmail.com": ["Cheltenham 10k 2021"],
-      "sarah.james@gmail.com": ["Grand Canyon Trust"],
-      "roxette.brooks@gmail.com": [
-        "Arizona Poised to Permit Canyon Uranium Mine",
-      ],
-      "art.fund@gmail.com": ["BUY ART, GIVE ART"],
+      "sarah.james@gmail.com": ["Community Tree Planting"],
+      "roxette.brooks@gmail.com": ["Volunteer Litter Picking"],
+      "art.fund@gmail.com": ["The Way Ahead"],
       "living.lands@gmai.com": [
-        "Arizona Poised to Permit Canyon Uranium Mine",
-        "Grand Canyon Trust",
+        "Volunteer Litter Picking",
+        "Community Tree Planting",
       ],
       "customerservice@morrisons.com": [
-        "Grand Canyon Trust",
-        "Arizona Poised to Permit Canyon Uranium Mine",
+        "Community Tree Planting",
+        "Volunteer Litter Picking",
       ],
       "customerservice@ikea.com": ["Cheltenham 10k 2021"],
     };
@@ -52,11 +50,11 @@ db.once("open", async () => {
     //mapping events to users
     const eventToCreatorMapper = {
       "Photography workshop by Aspire West Sussex": "jack.smith@gmail.com",
-      "RSPCA Fun Dog Show": "sarah.james@gmail.com",
-      "Protect the books": "roxette.brooks@gmail.com",
-      "BUY ART, GIVE ART": "art.fund@gmail.com",
-      "Arizona Poised to Permit Canyon Uranium Mine": "living.lands@gmai.com",
-      "Grand Canyon Trust": "customerservice@morrisons.com",
+      "Fun Dog Show": "sarah.james@gmail.com",
+      "The Brilliant Breakfast 2021": "roxette.brooks@gmail.com",
+      "The Way Ahead": "art.fund@gmail.com",
+      "Volunteer Litter Picking": "living.lands@gmai.com",
+      "Community Tree Planting": "customerservice@morrisons.com",
       "Cheltenham 10k 2021": "customerservice@morrisons.com",
     };
 
