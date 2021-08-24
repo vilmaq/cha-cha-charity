@@ -1,7 +1,7 @@
 const events = [
   {
     type: "Environmental",
-    name: "Photography workshop by Aspire West Suessex",
+    name: "Photography workshop by Aspire West Sussex",
     description:
       "Join Aspire West Sussex for a bitesize workshop on 'Photography: Framing Petworth - Pattern and Form' in the beautiful setting of Petworth Park. The 'Framing Petworth' series of field photography workshops provide a photographic exploration of the stunning grounds of Petworth House, following a variety of creative themes. Workshops are designed to be enjoyable to all, regardless of your level of photographic experience, knowledge or camera-type.",
     day: "2021-09-02",
