@@ -10,13 +10,22 @@ db.once("open", async () => {
     // mapping participants (from User) to events
     const eventToParticipantMapper = {
       "Photography workshop by Aspire West Sussex": [
+        "ggillbef@nature.com",
+        "nqueste@nba.com",
         "customerservice@ikea.com",
       ],
-      "Fun Dog Show": ["customerservice@ikea.com"],
+      "Fun Dog Show": [
+        "tlea@biblegateway.com",
+        "fschuler9@gmail.com",
+        "customerservice@ikea.com",
+      ],
       "The Brilliant Breakfast 2021": ["customerservice@ikea.com"],
       "Cheltenham 10k 2021": [
         "jack.smith@gmail.com",
+        "bmortimer@howstuffworks.com",
         "customerservice@ikea.com",
+        "rslottc@zdnet.com",
+        "kbeccerob@cbslocal.com",
       ],
       "Community Tree Planting": [
         "sarah.james@gmail.com",
@@ -25,17 +34,38 @@ db.once("open", async () => {
       ],
       "Volunteer Litter Picking": [
         "roxette.brooks@gmail.com",
+        "cwolfersj@salon.com",
+        "omossoni@nifty.com",
         "living.lands@gmai.com",
       ],
-      "The Way Ahead": ["art.fund@gmail.com"],
+      "The Way Ahead": [
+        "rsmeuinh@php.net",
+        "njorin@unicef.org",
+
+        "art.fund@gmail.com",
+      ],
+      "Placeholder Event": ["corporate@pdsa.org.uk", "jack.smith@gmail.com"],
     };
 
     //mapping events to users
     const userToEventMapper = {
-      "jack.smith@gmail.com": ["Cheltenham 10k 2021"],
+      "jack.smith@gmail.com": ["Cheltenham 10k 2021", "Placeholder Event"],
       "sarah.james@gmail.com": ["Community Tree Planting"],
       "roxette.brooks@gmail.com": ["Volunteer Litter Picking"],
+      "cwolfersj@salon.com": ["Volunteer Litter Picking"],
+      "omossoni@nifty.com": ["Volunteer Litter Picking"],
       "art.fund@gmail.com": ["The Way Ahead"],
+      "rsmeuinh@php.net": ["The Way Ahead"],
+      "njorin@unicef.org": ["The Way Ahead"],
+      "ggillbef@nature.com": ["Photography workshop by Aspire West Sussex"],
+      "nqueste@nba.com": ["Photography workshop by Aspire West Sussex"],
+      "bmortimer@howstuffworks.com": ["Cheltenham 10k 2021"],
+      "rslottc@zdnet.com": ["Cheltenham 10k 2021"],
+      "kbeccerob@cbslocal.com": ["Cheltenham 10k 2021"],
+      "tlea@biblegateway.com": ["Fun Dog Show"],
+      "fschuler9@gmail.com": ["Fun Dog Show"],
+      "corporate@pdsa.org.uk": ["Placeholder Event"],
+
       "living.lands@gmai.com": [
         "Volunteer Litter Picking",
         "Community Tree Planting",
@@ -56,6 +86,7 @@ db.once("open", async () => {
       "Volunteer Litter Picking": "living.lands@gmai.com",
       "Community Tree Planting": "customerservice@morrisons.com",
       "Cheltenham 10k 2021": "customerservice@morrisons.com",
+      "Placeholder Event": "jack.smith@gmail.com",
     };
 
     // clear database
