@@ -32,7 +32,8 @@ const events = [
   {
     type: "Education",
     name: "The Brilliant Breakfast 2021",
-    description: "recycle books to the next generation",
+    description:
+      "During the week of 11 – 17 October 2021, start your day with a Brilliant Breakfast that will change lives by raising money for young women in the UK who need our support, helping them wake up to a more positive futurThe Brilliant Breakfast is open to everyone to join in – it could be with friends round your kitchen table, with clients or colleagues in your office, with customers in your shops or virtually via Zoom or social media!To support the campaign, please contact the Events team on brilliantbreakfast@princes-trust.org.uk or call 020 7543 1370.Thank you to all of the companies who are supporting The Brilliant Breakfast this year.",
     day: "2021-10-02",
     street: "New Street",
     postcode: "B2 3DF",
