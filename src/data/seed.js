@@ -12,7 +12,7 @@ db.once("open", async () => {
       "Protect the rivers": ["customerservice@ikea.com"],
       "Protect the animals": ["customerservice@ikea.com"],
       "Protect the books": ["customerservice@ikea.com"],
-      "Cancer Research UK": [
+      "Cheltenham 10k 2021": [
         "jack.smith@gmail.com",
         "customerservice@ikea.com",
       ],
@@ -30,7 +30,7 @@ db.once("open", async () => {
 
     //mapping events to users
     const userToEventMapper = {
-      "jack.smith@gmail.com": ["Cancer Research UK"],
+      "jack.smith@gmail.com": ["Cheltenham 10k 2021"],
       "sarah.james@gmail.com": ["Grand Canyon Trust"],
       "roxette.brooks@gmail.com": [
         "Arizona Poised to Permit Canyon Uranium Mine",
@@ -44,7 +44,7 @@ db.once("open", async () => {
         "Grand Canyon Trust",
         "Arizona Poised to Permit Canyon Uranium Mine",
       ],
-      "customerservice@ikea.com": ["Cancer Research UK"],
+      "customerservice@ikea.com": ["Cheltenham 10k 2021"],
     };
 
     //mapping events to users
@@ -55,7 +55,7 @@ db.once("open", async () => {
       "BUY ART, GIVE ART": "art.fund@gmail.com",
       "Arizona Poised to Permit Canyon Uranium Mine": "living.lands@gmai.com",
       "Grand Canyon Trust": "customerservice@morrisons.com",
-      "Cancer Research UK": "customerservice@morrisons.com",
+      "Cheltenham 10k 2021": "customerservice@morrisons.com",
     };
 
     // clear database
