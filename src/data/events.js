@@ -9,7 +9,8 @@ const events = [
     city: "Birmingham",
     country: "United Kingdom",
     organizer: "the determined protector",
-    imageUrl: "22",
+    imageUrl:
+      "https://images.unsplash.com/photo-1590333748338-d629e4564ad9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1418&q=80",
     participants: [],
   },
   {
