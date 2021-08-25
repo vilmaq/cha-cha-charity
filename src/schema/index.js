@@ -72,7 +72,7 @@ const typeDefs = gql`
   }
 
   input LoginInput {
-    password: String!
+    password: String
     email: String!
   }
 
