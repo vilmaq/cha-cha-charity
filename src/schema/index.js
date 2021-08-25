@@ -50,6 +50,12 @@ const typeDefs = gql`
     user(id: ID!): User
   }
 
+  enum TaskStateEnum {
+    VOLUNTEER
+    BUSINESS
+    CHARITY
+  }
+
   input EventInput {
     type: String!
     name: String!
@@ -66,7 +72,7 @@ const typeDefs = gql`
   }
 
   input LoginInput {
-    password: String!
+    password: String
     email: String!
   }
 

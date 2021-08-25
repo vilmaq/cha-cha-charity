@@ -4,21 +4,25 @@ const { User } = require("../models");
 const { signToken } = require("../utils/auth");
 
 const login = async (_, { input }) => {
-  const user = await User.findOne({ email: input.email });
+  const { email, password } = input;
+
+  const user = await User.findOne({ email });
 
   if (!user) {
     throw new AuthenticationError("User does not exist");
   }
 
-  const isValidPassword = await user.validatePassword(input.password);
+  const isValidPassword = await user.validatePassword(password);
 
   if (!isValidPassword) {
-    throw new AuthenticationError("Failed login");
+    throw new AuthenticationError("Invalid password");
   }
 
-  const { firstName, lastName, email, _id: id } = user;
-
-  const token = signToken({ firstName, lastName, email, id });
+  const token = signToken({
+    id: user._id,
+    email: user.email,
+    username: user.username,
+  });
 
   return {
     token,
