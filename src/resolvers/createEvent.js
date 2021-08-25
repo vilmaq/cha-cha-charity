@@ -1,8 +1,6 @@
 const { AuthenticationError } = require("apollo-server");
-const { Event, User } = require("../models");
-const express = require("express");
-const { ApolloServer, gql } = require("apollo-server-express");
-const { GraphQLUpload, graphqlUploadExpress } = require("graphql-upload");
+const { Event } = require("../models");
+
 // const { finished } = require("stream/promises");
 
 const createEvent = async (_, { input }, context) => {
@@ -12,30 +10,29 @@ const createEvent = async (_, { input }, context) => {
       name,
       description,
       day,
+      time,
       street,
       postcode,
       city,
       country,
       organizer,
       creator,
-      phone_number,
       imageUrl,
-      user,
     } = input;
 
-    if (user === context.user.id) {
+    if (creator === context.user.id) {
       const event = await Event.create({
         type,
         name,
         description,
         day,
+        time,
         street,
         postcode,
         city,
         country,
         organizer,
         creator,
-        phone_number,
         imageUrl,
       });
       return event;
