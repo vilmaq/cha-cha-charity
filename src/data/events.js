@@ -15,6 +15,21 @@ const events = [
       "https://images.unsplash.com/photo-1494947665470-20322015e3a8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
     participants: [],
   },
+  {
+    type: "Animals",
+    name: "Muddy Dog Challenge 2021",
+    description:
+      "Join us in Leeds for the Muddy Dog Challenge 2021, a 2.5km or 5km obstacle run that you can tackle with your dog. In the heart of Yorkshire sits the beautiful Harewood House. The parkland of the estate has views of the rolling landscape and is the venue of our Leeds Muddy Dog Challenge, which is less than 10 miles from Leeds, York and Harrogate. Whether you’re a fitness fanatic or just looking for a fun day out, keen to run, or would rather stroll, we welcome humans and their dogs to take part and raise money to help care for the dogs and cats at Battersea.The Muddy Dog Challenge is a 2.5K or 5K obstacle course that you can take on with your dog by your side. Tackle the course with friends and family, with or without a dog, and prepare yourself for a day of mud, sweat, and cheers! By taking part, you’ll be helping us provide love and care for the thousands of lost, abandoned and unwanted dogs and cats that come into our care.",
+    day: "2021-10-02",
+    street: "HAREWOOD HOUSE",
+    postcode: "LS17 9LQ",
+    city: "Leeds",
+    country: "UK",
+    organizer: "Battersea Dogs & Cats Home",
+    imageUrl:
+      "https://images.unsplash.com/photo-1507518614721-2287bc7fa6e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    participants: [],
+  },
 
   /// ENVIRONMENTAL
   {
@@ -64,6 +79,34 @@ const events = [
   },
 
   /// INTERNATIONAL
+  {
+    type: "International",
+    name: "Yaba Daba Doo",
+    description: "dhghyjt",
+    day: "2021-10-09",
+    street: "142 The Grove",
+    postcode: "E15 1NS",
+    city: "London",
+    country: "UK",
+    organizer: "Bob Mortimer",
+    imageUrl:
+      "https://images.unsplash.com/photo-1513151233558-d860c5398176?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+    participants: [],
+  },
+  {
+    type: "International",
+    name: "Abra Cadabra",
+    description: "rth",
+    day: "2021-09-25",
+    street: "10 Furnival Street",
+    postcode: "EC4A 1AB",
+    city: "London",
+    country: "UK",
+    organizer: "Médecins Sans Frontières",
+    imageUrl:
+      "https://images.unsplash.com/photo-1513151233558-d860c5398176?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+    participants: [],
+  },
 
   /// HEALTH
   {
@@ -79,6 +122,34 @@ const events = [
     organizer: "Acorns Children's Hospice",
     imageUrl:
       "https://images.unsplash.com/photo-1590333748338-d629e4564ad9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1418&q=80",
+    participants: [],
+  },
+  {
+    type: "Health",
+    name: "Fundraiser For",
+    description: "gtrjsjjk",
+    day: "2021-09-10",
+    street: "2300 The Crescent, Birmingham Business Park",
+    postcode: "B37 7YE",
+    city: "Birmingham",
+    country: "UK",
+    organizer: "British Heart Foundation",
+    imageUrl:
+      "https://images.unsplash.com/photo-1513151233558-d860c5398176?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+    participants: [],
+  },
+  {
+    type: "Health",
+    name: "Five a Day",
+    description: "gtrjsjjk",
+    day: "2021-10-03",
+    street: "62 Buckingham Rd",
+    postcode: "L23 7RA",
+    city: "Thornton",
+    country: "UK",
+    organizer: "",
+    imageUrl:
+      "https://images.unsplash.com/photo-1513151233558-d860c5398176?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
     participants: [],
   },
 
@@ -99,6 +170,20 @@ const events = [
       "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
     participants: [],
   },
+  {
+    type: "Education",
+    name: "School is Cool",
+    description: "gtrjsjjk",
+    day: "2021-09-12",
+    street: "118 New St",
+    postcode: "B26 3JR",
+    city: "Birmingham",
+    country: "UK",
+    organizer: "The Prince's Trust",
+    imageUrl:
+      "https://images.unsplash.com/photo-1513151233558-d860c5398176?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+    participants: [],
+  },
   /// ART_CULTURE
   {
     type: "Art_Culture",
@@ -115,7 +200,6 @@ const events = [
       "https://images.unsplash.com/photo-1566954979172-eaba308acdf0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2089&q=80",
     participants: [],
   },
-
   {
     type: "Art_Culture",
     name: "Placeholder Event Charity",

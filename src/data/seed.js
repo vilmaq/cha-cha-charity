@@ -89,6 +89,12 @@ db.once("open", async () => {
         "nikorhyno@addthis.com",
         "facultycoffee@gmail.com",
       ],
+      "Muddy Dog Challenge 2021": ["info@battersea.org.uk"],
+      "Yaba Daba Doo": ["bmortimer@howstuffworks.com"],
+      "Abra Cadabra": [],
+      "Fundraiser For": [],
+      "School is Cool": [],
+      "Five a Day": [],
     };
 
     //mapping events to users
@@ -110,13 +116,17 @@ db.once("open", async () => {
       "bmortimer@howstuffworks.com": [
         "Cheltenham 10k 2021",
         "Community Tree Planting",
+        "Yaba Daba Doo",
       ],
       "rslottc@zdnet.com": ["Cheltenham 10k 2021"],
       "kbeccerob@cbslocal.com": ["Cheltenham 10k 2021"],
       "tlea@biblegateway.com": ["Fun Dog Show"],
       "fschuler9@gmail.com": ["Fun Dog Show"],
       "corporate@pdsa.org.uk": ["Placeholder Event Charity"],
-      "info@battersea.org.uk": ["Placeholder Event Charity"],
+      "info@battersea.org.uk": [
+        "Placeholder Event Charity",
+        "Muddy Dog Challenge 2021",
+      ],
       "media@foe.co.uk": ["Placeholder Event Charity"],
       "enquiries@nationaltrust.org.uk": ["Placeholder Event Charity"],
       "enquiries@keepbritaintidy.org": ["Placeholder Event Charity"],
@@ -177,6 +187,12 @@ db.once("open", async () => {
       "Cheltenham 10k 2021": "customerservice@morrisons.com",
       "Placeholder Event Charity": "jack.smith@gmail.com",
       "Placeholder Event Business": "art.fund@gmail.com",
+      "Muddy Dog Challenge 2021": "info@battersea.org.uk",
+      "Yaba Daba Doo": "bmortimer@howstuffworks.com",
+      "Abra Cadabra": "office-ldn@london.msf.org",
+      "Fundraiser For": "heretohelp@bhf.org.uk",
+      "School is Cool": "hrhelpdesk@princes-trust.org.uk",
+      "Five a Day": "general@alzheimers.co.uk",
     };
 
     // clear database
