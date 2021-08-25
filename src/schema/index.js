@@ -71,6 +71,14 @@ const typeDefs = gql`
     imageUrl: String
   }
 
+  input UpdateEvent {
+    eventId: ID!
+    name: String!
+    description: String!
+    street: String!
+    postcode: String!
+  }
+
   input LoginInput {
     password: String!
     email: String!
@@ -99,7 +107,7 @@ const typeDefs = gql`
 
   type Mutation {
     createEvent(input: EventInput!): Event!
-    updateEvent(input: EventInput!): Event!
+    updateEvent(input: UpdateEvent!): Event!
     deleteEvent(id: ID!): ID!
     signUp(input: SignUpInput!): Auth
     signUpToEvent(userId: ID!, eventId: ID!): Auth

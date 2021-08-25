@@ -22,8 +22,6 @@ const deleteEvent = async (_, { eventId }, context) => {
     );
   }
 };
-REACT_APP_ACCESS_ID = XXXXXXXXXX;
-REACT_APP_ACCESS_KEY = XXXXXXXXXX;
-REACT_APP_BUCKET_NAME = XXXXXXXXXX;
+
 
 module.exports = deleteEvent;
