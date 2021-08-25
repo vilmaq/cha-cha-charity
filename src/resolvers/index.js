@@ -7,15 +7,12 @@ const deleteEvent = require("./deleteEvent");
 const events = require("./events");
 const event = require("./event");
 const { GraphQLUpload, graphqlUploadExpress } = require("graphql-upload");
-const imageUpload = require("./imageUpload");
 
 const resolvers = {
   Query: {
     events,
     event,
   },
-
-  Upload: GraphQLUpload,
 
   Mutation: {
     login,
@@ -24,7 +21,6 @@ const resolvers = {
     updateEvent,
     deleteEvent,
     signUpToEvent,
-    imageUpload,
   },
 };
 

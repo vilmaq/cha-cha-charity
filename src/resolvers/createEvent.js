@@ -20,6 +20,7 @@ const createEvent = async (_, { input }, context) => {
       creator,
       phone_number,
       imageUrl,
+      user,
     } = input;
 
     if (user === context.user.id) {

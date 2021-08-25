@@ -30,6 +30,7 @@ const signUp = async (_, { input }) => {
     city,
   });
 
+  console.log("token", token);
   return {
     token,
     user,

@@ -14,10 +14,6 @@ const server = new ApolloServer({
   typeDefs,
   resolvers,
   context,
-  uploads: {
-    maxFileSize: 10000000, // 10 MB
-    maxFiles: 20,
-  },
 });
 
 db.once("open", () => {
