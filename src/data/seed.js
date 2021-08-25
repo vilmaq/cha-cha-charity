@@ -108,23 +108,23 @@ db.once("open", async () => {
         "omossoni@nifty.com",
         "fschuler9@gmail.com",
       ],
-      "Yaba Daba Doo": [
+      "Royal Parks Foundation Half Marathon": [
         "bmortimer@howstuffworks.com",
         "rsmeuinh@php.net",
         "cwolfersj@salon.com",
       ],
-      "Abra Cadabra": ["rsmeuinh@php.net", "kbeccerob@cbslocal.com"],
-      "Fundraiser For": [
+      "MSF Scientific Day": ["rsmeuinh@php.net", "kbeccerob@cbslocal.com"],
+      "Acorns Children's Hospice Car Boot Sale": [
         "ggillbef@nature.com",
         "rsmeuinh@php.net",
         "kbeccerob@cbslocal.com",
       ],
-      "School is Cool": [
+      "Bournemouth Half Marathon": [
         "rsmeuinh@php.net",
         "rslottc@zdnet.com",
         "sarah.james@gmail.com",
       ],
-      "Five a Day": [
+      "Cancer Research UK's Shine Night Walk": [
         "kbeccerob@cbslocal.com",
         "fschuler9@gmail.com",
         "sarah.james@gmail.com",
@@ -145,12 +145,12 @@ db.once("open", async () => {
       "roxette.brooks@gmail.com": [
         "Volunteer Litter Picking",
         "Muddy Dog Challenge 2021",
-        "School is Cool",
-        "Five a Day",
+        "Bournemouth Half Marathon",
+        "Cancer Research UK's Shine Night Walk",
       ],
       "cwolfersj@salon.com": [
         "Volunteer Litter Picking",
-        "Yaba Daba Doo",
+        "Royal Parks Foundation Half Marathon",
         "The Brilliant Breakfast 2021",
       ],
       "omossoni@nifty.com": [
@@ -162,10 +162,10 @@ db.once("open", async () => {
       "art.fund@gmail.com": ["The Way Ahead"],
       "rsmeuinh@php.net": [
         "The Way Ahead",
-        "School is Cool",
-        "Yaba Daba Doo",
-        "Abra Cadabra",
-        "Fundraiser For",
+        "Bournemouth Half Marathon",
+        "Royal Parks Foundation Half Marathon",
+        "MSF Scientific Day",
+        "Acorns Children's Hospice Car Boot Sale",
       ],
       "njorin@unicef.org": [
         "The Way Ahead",
@@ -174,7 +174,7 @@ db.once("open", async () => {
       ],
       "ggillbef@nature.com": [
         "Photography workshop by Aspire West Sussex",
-        "Fundraiser For",
+        "Acorns Children's Hospice Car Boot Sale",
       ],
       "nqueste@nba.com": [
         "Photography workshop by Aspire West Sussex",
@@ -183,19 +183,19 @@ db.once("open", async () => {
       "bmortimer@howstuffworks.com": [
         "Cheltenham 10k 2021",
         "Community Tree Planting",
-        "Yaba Daba Doo",
+        "Royal Parks Foundation Half Marathon",
       ],
       "rslottc@zdnet.com": [
         "Cheltenham 10k 2021",
         "Community Tree Planting",
         "The Way Ahead",
-        "School is Cool",
+        "Bournemouth Half Marathon",
       ],
       "kbeccerob@cbslocal.com": [
         "Cheltenham 10k 2021",
-        "Five a Day",
-        "Abra Cadabra",
-        "Fundraiser For",
+        "Cancer Research UK's Shine Night Walk",
+        "MSF Scientific Day",
+        "Acorns Children's Hospice Car Boot Sale",
       ],
       "tlea@biblegateway.com": [
         "Fun Dog Show",
@@ -205,7 +205,7 @@ db.once("open", async () => {
       "fschuler9@gmail.com": [
         "Fun Dog Show",
         "Muddy Dog Challenge 2021",
-        "Five a Day",
+        "Cancer Research UK's Shine Night Walk",
         "The Way Ahead",
       ],
 
@@ -276,11 +276,11 @@ db.once("open", async () => {
       "Placeholder Event Charity": "jack.smith@gmail.com",
       "Placeholder Event Business": "art.fund@gmail.com",
       "Muddy Dog Challenge 2021": "info@battersea.org.uk",
-      "Yaba Daba Doo": "bmortimer@howstuffworks.com",
-      "Abra Cadabra": "office-ldn@london.msf.org",
-      "Fundraiser For": "heretohelp@bhf.org.uk",
-      "School is Cool": "hrhelpdesk@princes-trust.org.uk",
-      "Five a Day": "general@alzheimers.co.uk",
+      "Royal Parks Foundation Half Marathon": "bmortimer@howstuffworks.com",
+      "MSF Scientific Day": "office-ldn@london.msf.org",
+      "Acorns Children's Hospice Car Boot Sale": "heretohelp@bhf.org.uk",
+      "Bournemouth Half Marathon": "hrhelpdesk@princes-trust.org.uk",
+      "Cancer Research UK's Shine Night Walk": "general@alzheimers.co.uk",
     };
 
     // clear database
