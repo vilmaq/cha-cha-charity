@@ -1,10 +1,8 @@
-const mongoose = require("mongoose");
+const { Schema, model } = require("mongoose");
 
 const { hashPassword, validatePassword } = require("../utils/password");
 
-const Schema = mongoose.Schema;
-
-const userSchema = new Schema({
+const schema = new Schema({
   type: {
     type: String,
     enum: ["Volunteer", "Business", "Charity"],
@@ -80,14 +78,12 @@ const userSchema = new Schema({
   ],
 });
 
-const User = mongoose.model("User", userSchema);
-
-//hook password before creating the user
+const userSchema = new Schema(schema);
 
 userSchema.pre("save", hashPassword);
 
-//method to validate the password
-
 userSchema.methods.validatePassword = validatePassword;
+
+const User = model("User", userSchema);
 
 module.exports = User;

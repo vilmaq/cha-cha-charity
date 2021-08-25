@@ -8,6 +8,7 @@ const signToken = (payload) => {
 };
 
 const verifyToken = (token) => {
+  //return true;
   return jwt.verify(token, secret, { maxAge: expiresIn });
 };
 
