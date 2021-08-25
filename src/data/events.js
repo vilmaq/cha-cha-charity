@@ -82,7 +82,8 @@ const events = [
   {
     type: "International",
     name: "Yaba Daba Doo",
-    description: "dhghyjt",
+    description:
+      "Sed dui lectus, varius eget. Nam sed magna urna tempus. Praesent eget eleifend libero nibh.. Duis volutpat, dolor nec scelerisque. Phasellus in nisi diam nunc. Donec mattis erat ac lorem. Vestibulum auctor augue ut enim. Curabitur ornare eleifend lectus, eget. Maecenas sodales, dui nec condimentum. Nam purus sapien, elementum nec.",
     day: "2021-10-09",
     street: "142 The Grove",
     postcode: "E15 1NS",
@@ -96,7 +97,8 @@ const events = [
   {
     type: "International",
     name: "Abra Cadabra",
-    description: "rth",
+    description:
+      "Sed dui lectus, varius eget. Nam sed magna urna tempus. Praesent eget eleifend libero nibh.. Duis volutpat, dolor nec scelerisque. Phasellus in nisi diam nunc. Donec mattis erat ac lorem. Vestibulum auctor augue ut enim. Curabitur ornare eleifend lectus, eget. Maecenas sodales, dui nec condimentum. Nam purus sapien, elementum nec.",
     day: "2021-09-25",
     street: "10 Furnival Street",
     postcode: "EC4A 1AB",
@@ -141,13 +143,14 @@ const events = [
   {
     type: "Health",
     name: "Five a Day",
-    description: "gtrjsjjk",
+    description:
+      "Sed dui lectus, varius eget. Nam sed magna urna tempus. Praesent eget eleifend libero nibh.. Duis volutpat, dolor nec scelerisque. Phasellus in nisi diam nunc. Donec mattis erat ac lorem. Vestibulum auctor augue ut enim. Curabitur ornare eleifend lectus, eget. Maecenas sodales, dui nec condimentum. Nam purus sapien, elementum nec.",
     day: "2021-10-03",
     street: "62 Buckingham Rd",
     postcode: "L23 7RA",
     city: "Thornton",
     country: "UK",
-    organizer: "",
+    organizer: "Baba",
     imageUrl:
       "https://images.unsplash.com/photo-1513151233558-d860c5398176?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
     participants: [],
@@ -173,7 +176,8 @@ const events = [
   {
     type: "Education",
     name: "School is Cool",
-    description: "gtrjsjjk",
+    description:
+      "Sed dui lectus, varius eget. Nam sed magna urna tempus. Praesent eget eleifend libero nibh.. Duis volutpat, dolor nec scelerisque. Phasellus in nisi diam nunc. Donec mattis erat ac lorem. Vestibulum auctor augue ut enim. Curabitur ornare eleifend lectus, eget. Maecenas sodales, dui nec condimentum. Nam purus sapien, elementum nec.",
     day: "2021-09-12",
     street: "118 New St",
     postcode: "B26 3JR",

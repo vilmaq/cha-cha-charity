@@ -18,20 +18,30 @@ db.once("open", async () => {
         "tlea@biblegateway.com",
         "fschuler9@gmail.com",
         "customerservice@ikea.com",
+        "njorin@unicef.org",
+        "nqueste@nba.com",
       ],
-      "The Brilliant Breakfast 2021": ["customerservice@ikea.com"],
+      "The Brilliant Breakfast 2021": [
+        "customerservice@ikea.com",
+        "tlea@biblegateway.com",
+        "cwolfersj@salon.com",
+        "njorin@unicef.org",
+        "omossoni@nifty.com",
+      ],
       "Cheltenham 10k 2021": [
         "jack.smith@gmail.com",
         "bmortimer@howstuffworks.com",
         "customerservice@ikea.com",
         "rslottc@zdnet.com",
         "kbeccerob@cbslocal.com",
+        "tlea@biblegateway.com",
       ],
       "Community Tree Planting": [
         "sarah.james@gmail.com",
         "customerservice@morrisons.com",
         "living.lands@gmail.com",
         "bmortimer@howstuffworks.com",
+        "rslottc@zdnet.com",
       ],
       "Volunteer Litter Picking": [
         "roxette.brooks@gmail.com",
@@ -42,8 +52,10 @@ db.once("open", async () => {
       "The Way Ahead": [
         "rsmeuinh@php.net",
         "njorin@unicef.org",
-
+        "fschuler9@gmail.com",
         "art.fund@gmail.com",
+        "rslottc@zdnet.com",
+        "omossoni@nifty.com",
       ],
       "Placeholder Event Charity": [
         "corporate@pdsa.org.uk",
@@ -89,12 +101,34 @@ db.once("open", async () => {
         "nikorhyno@addthis.com",
         "facultycoffee@gmail.com",
       ],
-      "Muddy Dog Challenge 2021": ["info@battersea.org.uk"],
-      "Yaba Daba Doo": ["bmortimer@howstuffworks.com"],
-      "Abra Cadabra": [],
-      "Fundraiser For": [],
-      "School is Cool": [],
-      "Five a Day": [],
+      "Muddy Dog Challenge 2021": [
+        "info@battersea.org.uk",
+        "sarah.james@gmail.com",
+        "roxette.brooks@gmail.com",
+        "omossoni@nifty.com",
+        "fschuler9@gmail.com",
+      ],
+      "Yaba Daba Doo": [
+        "bmortimer@howstuffworks.com",
+        "rsmeuinh@php.net",
+        "cwolfersj@salon.com",
+      ],
+      "Abra Cadabra": ["rsmeuinh@php.net", "kbeccerob@cbslocal.com"],
+      "Fundraiser For": [
+        "ggillbef@nature.com",
+        "rsmeuinh@php.net",
+        "kbeccerob@cbslocal.com",
+      ],
+      "School is Cool": [
+        "rsmeuinh@php.net",
+        "rslottc@zdnet.com",
+        "sarah.james@gmail.com",
+      ],
+      "Five a Day": [
+        "kbeccerob@cbslocal.com",
+        "fschuler9@gmail.com",
+        "sarah.james@gmail.com",
+      ],
     };
 
     //mapping events to users
@@ -104,24 +138,78 @@ db.once("open", async () => {
         "Placeholder Event Charity",
         "Placeholder Event Business",
       ],
-      "sarah.james@gmail.com": ["Community Tree Planting"],
-      "roxette.brooks@gmail.com": ["Volunteer Litter Picking"],
-      "cwolfersj@salon.com": ["Volunteer Litter Picking"],
-      "omossoni@nifty.com": ["Volunteer Litter Picking"],
+      "sarah.james@gmail.com": [
+        "Community Tree Planting",
+        "Muddy Dog Challenge 2021",
+      ],
+      "roxette.brooks@gmail.com": [
+        "Volunteer Litter Picking",
+        "Muddy Dog Challenge 2021",
+        "School is Cool",
+        "Five a Day",
+      ],
+      "cwolfersj@salon.com": [
+        "Volunteer Litter Picking",
+        "Yaba Daba Doo",
+        "The Brilliant Breakfast 2021",
+      ],
+      "omossoni@nifty.com": [
+        "Volunteer Litter Picking",
+        "Muddy Dog Challenge 2021",
+        "The Way Ahead",
+        "The Brilliant Breakfast 2021",
+      ],
       "art.fund@gmail.com": ["The Way Ahead"],
-      "rsmeuinh@php.net": ["The Way Ahead"],
-      "njorin@unicef.org": ["The Way Ahead"],
-      "ggillbef@nature.com": ["Photography workshop by Aspire West Sussex"],
-      "nqueste@nba.com": ["Photography workshop by Aspire West Sussex"],
+      "rsmeuinh@php.net": [
+        "The Way Ahead",
+        "School is Cool",
+        "Yaba Daba Doo",
+        "Abra Cadabra",
+        "Fundraiser For",
+      ],
+      "njorin@unicef.org": [
+        "The Way Ahead",
+        "The Brilliant Breakfast 2021",
+        "Fun Dog Show",
+      ],
+      "ggillbef@nature.com": [
+        "Photography workshop by Aspire West Sussex",
+        "Fundraiser For",
+      ],
+      "nqueste@nba.com": [
+        "Photography workshop by Aspire West Sussex",
+        "Fun Dog Show",
+      ],
       "bmortimer@howstuffworks.com": [
         "Cheltenham 10k 2021",
         "Community Tree Planting",
         "Yaba Daba Doo",
       ],
-      "rslottc@zdnet.com": ["Cheltenham 10k 2021"],
-      "kbeccerob@cbslocal.com": ["Cheltenham 10k 2021"],
-      "tlea@biblegateway.com": ["Fun Dog Show"],
-      "fschuler9@gmail.com": ["Fun Dog Show"],
+      "rslottc@zdnet.com": [
+        "Cheltenham 10k 2021",
+        "Community Tree Planting",
+        "The Way Ahead",
+        "School is Cool",
+      ],
+      "kbeccerob@cbslocal.com": [
+        "Cheltenham 10k 2021",
+        "Five a Day",
+        "Abra Cadabra",
+        "Fundraiser For",
+      ],
+      "tlea@biblegateway.com": [
+        "Fun Dog Show",
+        "The Brilliant Breakfast 2021",
+        "Cheltenham 10k 2021",
+      ],
+      "fschuler9@gmail.com": [
+        "Fun Dog Show",
+        "Muddy Dog Challenge 2021",
+        "Five a Day",
+        "The Way Ahead",
+      ],
+
+      // charities //
       "corporate@pdsa.org.uk": ["Placeholder Event Charity"],
       "info@battersea.org.uk": [
         "Placeholder Event Charity",
@@ -146,7 +234,7 @@ db.once("open", async () => {
       "info@artfund.com": ["Placeholder Event Charity"],
       "admin@jewishmuseum.org.uk": ["Placeholder Event Charity"],
       "info@shapearts.org.uk": ["Placeholder Event Charity"],
-
+      // businesses //
       "rgerry0@stanford.com": ["Placeholder Event Business"],
       "attopic@typepad.com": ["Placeholder Event Business"],
       "recycle@info.com": ["Placeholder Event Business"],
