@@ -12,11 +12,15 @@ const eventSchema = new Schema({
   },
   description: {
     type: String,
-    required: false,
+    required: true,
   },
   day: {
-    type: String,
+    type: Date,
     required: true,
+  },
+  time: {
+    type: Date,
+    required: false,
   },
   street: {
     type: String,
@@ -24,11 +28,11 @@ const eventSchema = new Schema({
   },
   postcode: {
     type: String,
-    required: false,
+    required: true,
   },
   city: {
     type: String,
-    required: false,
+    required: true,
   },
   country: {
     type: String,
@@ -36,14 +40,16 @@ const eventSchema = new Schema({
   },
   organizer: {
     type: String,
+    required: true,
   },
   creator: {
     type: Schema.Types.ObjectId,
     ref: "User",
+    required: true,
   },
   imageUrl: {
     type: String,
-    required: true,
+    required: false,
   },
 
   participants: [

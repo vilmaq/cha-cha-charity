@@ -7,14 +7,15 @@ const typeDefs = gql`
     name: String!
     description: String!
     day: String!
+    time: String
     street: String!
     postcode: String!
     city: String!
     country: String!
     organizer: String!
     creator: User!
-    imageUrl: String
     participants: [User]
+    imageUrl: String
   }
 
   type User {
@@ -57,11 +58,12 @@ const typeDefs = gql`
   }
 
   input EventInput {
-    eventId: ID!
+    ID: ID
     type: String!
     name: String!
     description: String!
     day: String!
+    time: String
     street: String!
     postcode: String!
     city: String!

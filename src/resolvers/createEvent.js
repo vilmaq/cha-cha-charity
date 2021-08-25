@@ -1,70 +1,50 @@
 const { AuthenticationError } = require("apollo-server");
+const { Event } = require("../models");
 
-const { Event, User } = require("../models");
+// const { finished } = require("stream/promises");
 
 const createEvent = async (_, { input }, context) => {
   if (context.user) {
     const {
+      type,
       name,
-      fullName,
-      password,
-      imageUrl,
-      street,
-      phoneNumber,
-      postcode,
-      city,
-      country,
-      email,
-      bio,
-      animals,
-      environmental,
-      international,
-      health,
-      education,
-      artCulture,
-    } = input;
-
-    const user = await User.create({
-      name: [],
-      fullName: [],
-      password: [],
-      imageUrl: [],
-      street: [],
-      phoneNumber: [],
-      postcode: [],
-      city: [],
-      country: [],
-      email: [],
-      bio: [],
-      animals: [],
-      environmental: [],
-      international: [],
-      health: [],
-      education: [],
-      artCulture: [],
-    });
-
-    return await Event.create({
-      name,
+      description,
       day,
-      postCode,
+      time,
       street,
+      postcode,
       city,
       country,
       organizer,
       creator,
       imageUrl,
-      description,
-      user,
-      user: context.user.id,
-    });
+    } = input;
+
+    if (creator === context.user.id) {
+      const event = await Event.create({
+        type,
+        name,
+        description,
+        day,
+        time,
+        street,
+        postcode,
+        city,
+        country,
+        organizer,
+        creator,
+        imageUrl,
+      });
+      return event;
+    } else {
+      throw new AuthenticationError(
+        "User not authorised to perform this action."
+      );
+    }
   } else {
-    throw new AuthenticationError("Not authorized");
+    throw new AuthenticationError(
+      "User not authorised to perform this action."
+    );
   }
 };
-
-// id: "123",
-// title: "New Event",
-// content: "This is a new Event!!",
-
 module.exports = createEvent;
