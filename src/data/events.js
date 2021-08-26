@@ -12,7 +12,6 @@ const events = [
     city: "Doncaster",
     country: "United Kingdom",
     organizer: "RSPCA Doncaster",
-    creator: [],
     imageUrl:
       "https://images.unsplash.com/photo-1494947665470-20322015e3a8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
     participants: [],
@@ -29,7 +28,6 @@ const events = [
     city: "Leeds",
     country: "UK",
     organizer: "Battersea Dogs & Cats Home",
-    creator: [],
     imageUrl:
       "https://images.unsplash.com/photo-1507518614721-2287bc7fa6e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
     participants: [],
@@ -48,7 +46,6 @@ const events = [
     city: "Petworth",
     country: "United Kingdom",
     organizer: "National Trust - Petworth House and Park",
-    creator: [],
     imageUrl:
       "https://images.unsplash.com/photo-1500027419059-afa3360ead5d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
     participants: [],
@@ -65,7 +62,6 @@ const events = [
     city: "Stirchley",
     country: "United Kingdom",
     organizer: "Keep Britain Tidy",
-    creator: [],
     imageUrl:
       "https://images.unsplash.com/photo-1594466179447-cd9892076389?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1990&q=80",
     participants: [],
@@ -82,7 +78,6 @@ const events = [
     city: "Enfield",
     country: "United Kingdom",
     organizer: "Friends of the Earth",
-    creator: [],
     imageUrl:
       "https://images.unsplash.com/photo-1524602585632-a2a01c12307c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1982&q=80",
     participants: [],
@@ -101,7 +96,6 @@ const events = [
     city: "London",
     country: "UK",
     organizer: "Save the Children",
-    creator: [],
     imageUrl:
       "https://images.unsplash.com/photo-1588944164143-9f535c87f1ed?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1491&q=80",
     participants: [],
@@ -118,7 +112,6 @@ const events = [
     city: "London",
     country: "UK",
     organizer: "Médecins Sans Frontières",
-    creator: [],
     imageUrl:
       "https://images.unsplash.com/photo-1515168985652-8454bcc8fcaf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
     participants: [],
@@ -136,7 +129,6 @@ const events = [
     postcode: "GL50 4SH",
     city: "Cheltenham",
     country: "United Kingdom",
-    creator: [],
     organizer: "British Heart Foundation",
     imageUrl:
       "https://images.unsplash.com/photo-1590333748338-d629e4564ad9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1418&q=80",
@@ -153,7 +145,6 @@ const events = [
     postcode: "B37 7YE",
     city: "Birmingham",
     country: "UK",
-    creator: [],
     organizer: "Acorns Children's Hospice",
     imageUrl:
       "https://images.unsplash.com/photo-1598888831741-cb535295b013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80",
@@ -170,7 +161,6 @@ const events = [
     postcode: "L23 7RA",
     city: "Thornton",
     country: "UK",
-    creator: [],
     organizer: "Alzheimer's Society",
     imageUrl:
       "https://images.unsplash.com/photo-1580073288094-f676869b8ccf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1508&q=80",
@@ -190,7 +180,6 @@ const events = [
     postcode: "B2 3DF",
     city: "Birmingham",
     country: "United Kingdom",
-    creator: [],
     organizer: "The Prince’s Trust",
     imageUrl:
       "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
@@ -207,7 +196,6 @@ const events = [
     postcode: "BH6 4EW",
     city: "Bournemouth",
     country: "UK",
-    creator: [],
     organizer: "The Prince's Trust",
     imageUrl:
       "https://images.unsplash.com/photo-1571008907717-47660dc646b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
@@ -225,7 +213,6 @@ const events = [
     postcode: "S70 2HZ",
     city: "Barnsley",
     country: "United Kingdom",
-    creator: [],
     organizer: "Shape Arts",
     imageUrl:
       "https://images.unsplash.com/photo-1566954979172-eaba308acdf0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2089&q=80",
@@ -242,7 +229,6 @@ const events = [
     postcode: "B30 2SH",
     city: "Swamp",
     country: "United Kingdom",
-    creator: [],
     organizer: "Art Fund",
     imageUrl:
       "https://i.kym-cdn.com/entries/icons/original/000/030/710/dd0.png",
@@ -259,7 +245,6 @@ const events = [
     postcode: "GL50 4SH",
     city: "Lake",
     country: "United Kingdom",
-    creator: [],
     organizer: "Art Fund",
     imageUrl:
       "https://i.kym-cdn.com/entries/icons/original/000/030/710/dd0.png",

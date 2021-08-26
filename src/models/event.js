@@ -42,12 +42,11 @@ const eventSchema = new Schema({
     type: String,
     required: true,
   },
-  creator: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: "User",
-    },
-  ],
+  creator: {
+    type: Schema.Types.ObjectId,
+    ref: "User",
+  },
+
   imageUrl: {
     type: String,
     required: false,
