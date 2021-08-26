@@ -15,11 +15,11 @@ const eventSchema = new Schema({
     required: true,
   },
   day: {
-    type: Date,
+    type: String,
     required: true,
   },
   time: {
-    type: Date,
+    type: String,
     required: false,
   },
   street: {
