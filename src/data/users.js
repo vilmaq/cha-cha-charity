@@ -3,7 +3,7 @@ const users = [
   {
     type: "Volunteer",
     fullName: "Jack Smith",
-    password: "password123",
+    password: "$2b$10$AcJ9lCW27uOEULqQ94deG.DqH2g8yveaIEW61jITPx0eOxam/L.jq",
     imageUrl: "",
     email: "jack.smith@gmail.com",
     phoneNumber: "07796344222",
@@ -22,7 +22,7 @@ const users = [
   {
     type: "Volunteer",
     fullName: "Sarah James",
-    password: "password222",
+    password: "$2b$10$AcJ9lCW27uOEULqQ94deG.DqH2g8yveaIEW61jITPx0eOxam/L.jq",
     imageUrl: "",
     email: "sarah.james@gmail.com",
     phoneNumber: "07796342221",
@@ -41,7 +41,7 @@ const users = [
   {
     type: "Volunteer",
     fullName: "Roxanne Brocks",
-    password: "password444",
+    password: "$2b$10$AcJ9lCW27uOEULqQ94deG.DqH2g8yveaIEW61jITPx0eOxam/L.jq",
     imageUrl: "",
     email: "roxette.brooks@gmail.com",
     phoneNumber: "07796343224",
@@ -60,7 +60,7 @@ const users = [
   {
     type: "Volunteer",
     fullName: "Cathleen Wolfers",
-    password: "kIoijovQPc",
+    password: "$2b$10$AcJ9lCW27uOEULqQ94deG.DqH2g8yveaIEW61jITPx0eOxam/L.jq",
     imageUrl: "",
     email: "cwolfersj@salon.com",
     phoneNumber: "07738693891",
@@ -79,7 +79,7 @@ const users = [
   {
     type: "Volunteer",
     fullName: "Oriana Mosson",
-    password: "9XMptqTW8ZK",
+    password: "$2b$10$AcJ9lCW27uOEULqQ94deG.DqH2g8yveaIEW61jITPx0eOxam/L.jq",
     imageUrl: "",
     email: "omossoni@nifty.com",
     phoneNumber: "07044276154",
@@ -98,7 +98,7 @@ const users = [
   {
     type: "Volunteer",
     fullName: "Ronda Smeuin",
-    password: "cbMtZj",
+    password: "$2b$10$AcJ9lCW27uOEULqQ94deG.DqH2g8yveaIEW61jITPx0eOxam/L.jq",
     imageUrl: "",
     email: "rsmeuinh@php.net",
     phoneNumber: "07041453182",
@@ -117,7 +117,7 @@ const users = [
   {
     type: "Volunteer",
     fullName: "Nina Jorin",
-    password: "5giJrOdy",
+    password: "$2b$10$AcJ9lCW27uOEULqQ94deG.DqH2g8yveaIEW61jITPx0eOxam/L.jq",
     imageUrl: "",
     email: "njorin@unicef.org",
     phoneNumber: "07965180387",
@@ -136,7 +136,7 @@ const users = [
   {
     type: "Volunteer",
     fullName: "Georgia Gillbe",
-    password: "046q1tl7Y",
+    password: "$2b$10$AcJ9lCW27uOEULqQ94deG.DqH2g8yveaIEW61jITPx0eOxam/L.jq",
     imageUrl: "",
     email: "ggillbef@nature.com",
     phoneNumber: "07826520275",
@@ -155,7 +155,7 @@ const users = [
   {
     type: "Volunteer",
     fullName: "Normani Quest",
-    password: "AXfgQsIF",
+    password: "$2b$10$AcJ9lCW27uOEULqQ94deG.DqH2g8yveaIEW61jITPx0eOxam/L.jq",
     imageUrl: "",
     email: "nqueste@nba.com",
     phoneNumber: "07049876239",
@@ -174,7 +174,7 @@ const users = [
   {
     type: "Volunteer",
     fullName: "Bob Mortimer",
-    password: "eKqdEJgzt",
+    password: "$2b$10$AcJ9lCW27uOEULqQ94deG.DqH2g8yveaIEW61jITPx0eOxam/L.jq",
     imageUrl: "",
     email: "bmortimer@howstuffworks.com",
     phoneNumber: "07739756357",
@@ -193,7 +193,7 @@ const users = [
   {
     type: "Volunteer",
     fullName: "Roseanne Slott",
-    password: "m7SVFT",
+    password: "$2b$10$AcJ9lCW27uOEULqQ94deG.DqH2g8yveaIEW61jITPx0eOxam/L.jq",
     imageUrl: "",
     email: "rslottc@zdnet.com",
     phoneNumber: "07024247752",
@@ -212,7 +212,7 @@ const users = [
   {
     type: "Volunteer",
     fullName: "Kelsey Beccero",
-    password: "NdDMtEWjbAp",
+    password: "$2b$10$AcJ9lCW27uOEULqQ94deG.DqH2g8yveaIEW61jITPx0eOxam/L.jq",
     imageUrl: "",
     email: "kbeccerob@cbslocal.com",
     phoneNumber: "07015012589",
@@ -231,7 +231,7 @@ const users = [
   {
     type: "Volunteer",
     fullName: "Trisha Paytas",
-    password: "OGzkKJGkO3Rb",
+    password: "$2b$10$AcJ9lCW27uOEULqQ94deG.DqH2g8yveaIEW61jITPx0eOxam/L.jq",
     imageUrl: "",
     email: "tlea@biblegateway.com",
     phoneNumber: "07066331486",
@@ -250,7 +250,7 @@ const users = [
   {
     type: "Volunteer",
     fullName: "Francesca Schuler",
-    password: "BUr27Lsr",
+    password: "$2b$10$AcJ9lCW27uOEULqQ94deG.DqH2g8yveaIEW61jITPx0eOxam/L.jq",
     imageUrl: "",
     email: "fschuler9@gmail.com",
     phoneNumber: "07019084108",
@@ -271,7 +271,7 @@ const users = [
   {
     type: "Business",
     fullName: "Art Fund",
-    password: "4444",
+    password: "$2b$10$AcJ9lCW27uOEULqQ94deG.DqH2g8yveaIEW61jITPx0eOxam/L.jq",
     imageUrl: "image.png",
     email: "art.fund@gmail.com",
     phoneNumber: "0203 757 9772",
@@ -291,7 +291,7 @@ const users = [
   {
     type: "Business",
     fullName: "Living Lands and Waters",
-    password: "5552",
+    password: "$2b$10$AcJ9lCW27uOEULqQ94deG.DqH2g8yveaIEW61jITPx0eOxam/L.jq",
     imageUrl: "image.png",
     email: "living.lands@gmail.com",
     phoneNumber: "(309) 496-9848",
@@ -311,7 +311,7 @@ const users = [
   {
     type: "Business",
     fullName: "Morrisons",
-    password: "Password123",
+    password: "$2b$10$AcJ9lCW27uOEULqQ94deG.DqH2g8yveaIEW61jITPx0eOxam/L.jq",
     email: "customerservice@morrisons.com",
     phoneNumber: "0123455445",
     street: "New Street",
@@ -347,7 +347,7 @@ const users = [
   {
     type: "Business",
     fullName: "Loft Lighting & Furnishing",
-    password: "nryiU00",
+    password: "$2b$10$AcJ9lCW27uOEULqQ94deG.DqH2g8yveaIEW61jITPx0eOxam/L.jq",
     imageUrl: "",
     email: "rgerry0@stanford.com",
     phoneNumber: "07034661202",
@@ -480,7 +480,7 @@ const users = [
   {
     type: "Business",
     fullName: "Oakley Waste",
-    password: "c4trloBQih",
+    password: "$2b$10$AcJ9lCW27uOEULqQ94deG.DqH2g8yveaIEW61jITPx0eOxam/L.jq",
     imageUrl: "",
     email: "oakley@cnn.com",
     phoneNumber: "07725522680",
@@ -499,7 +499,7 @@ const users = [
   {
     type: "Business",
     fullName: "Pinnacle Countrywide",
-    password: "cW2K6dww1oSA",
+    password: "$2b$10$AcJ9lCW27uOEULqQ94deG.DqH2g8yveaIEW61jITPx0eOxam/L.jq",
     imageUrl: "",
     email: "pinnacle@hhs.co.uk",
     phoneNumber: "07083607804",
