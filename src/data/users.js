@@ -674,10 +674,10 @@ const users = [
 
   {
     type: "Charity",
-    fullName: "PDSA",
+    fullName: "RSPCA",
     password: "xUEKKCyyr",
     imageUrl: "",
-    email: "corporate@pdsa.org.uk",
+    email: "corporate@RSPCA.org.uk",
     phoneNumber: "01632 960637",
     street: "North Hylton Road",
     postcode: "SR5 3AD",
