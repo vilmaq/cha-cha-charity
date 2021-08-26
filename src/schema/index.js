@@ -112,7 +112,7 @@ const typeDefs = gql`
     updateEvent(input: UpdateEvent!): Event!
     deleteEvent(id: ID!): ID!
     signUp(input: SignUpInput!): Auth
-    signUpToEvent(userId: ID!, eventId: ID!): Auth
+    signUpToEvent(userId: ID!, eventId: ID!): Event!
     login(input: LoginInput!): Auth
   }
 `;
