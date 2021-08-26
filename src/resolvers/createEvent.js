@@ -4,6 +4,7 @@ const { Event } = require("../models");
 // const { finished } = require("stream/promises");
 
 const createEvent = async (_, { input }, context) => {
+  console.log(input);
   if (context.user) {
     const {
       type,
@@ -21,7 +22,7 @@ const createEvent = async (_, { input }, context) => {
     } = input;
 
     if (creator === context.user.id) {
-      const event = await Event.create({
+      let event = await Event.create({
         type,
         name,
         description,
@@ -35,6 +36,7 @@ const createEvent = async (_, { input }, context) => {
         creator,
         imageUrl,
       });
+      event = await event.populate("creator").execPopulate();
       return event;
     } else {
       throw new AuthenticationError(
@@ -47,4 +49,5 @@ const createEvent = async (_, { input }, context) => {
     );
   }
 };
+
 module.exports = createEvent;

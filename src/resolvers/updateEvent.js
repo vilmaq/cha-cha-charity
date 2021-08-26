@@ -4,20 +4,7 @@ const { Event } = require("../models");
 
 const updateEvent = async (_, { input }, context) => {
   if (context.user) {
-    const {
-      type,
-      name,
-      description,
-      day,
-      street,
-      postcode,
-      city,
-      country,
-      organizer,
-      //creator,
-      user,
-      eventId,
-    } = input;
+    const { name, description, street, postcode, user, eventId } = input;
 
     if (user === context.user.id) {
       // //const newEvent = await Event.findOne({
@@ -27,19 +14,14 @@ const updateEvent = async (_, { input }, context) => {
       const event = await Event.findByIdAndUpdate(
         eventId,
         {
-          type,
           name,
           description,
-          day,
           street,
           postcode,
-          city,
-          country,
-          organizer,
-          //creator,
         },
         { new: true }
       ).populate("participants");
+
       console.log(event);
 
       return event;
