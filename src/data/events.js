@@ -143,7 +143,7 @@ const events = [
   },
   {
     type: "Health",
-    name: "Cancer Research UK's Shine Night Walk",
+    name: "Alzheimers UK's Shine Night Walk",
     description:
       "Make 2021 a year to remember and experience a night like no other - a Marathon, Half Marathon or 10k charity night walk through your city. Select the cancer type you want to support and raise money for life-saving research. It’s a night to celebrate, push yourself and feel proud. As always at our events the health and safety of our participants, staff and volunteers is our top priority. We will continue to monitor the situation closely and keep you updated with our planning, much of which will focus on how we deliver a safe event in the context of all necessary COVID-19 guidelines and precautions. It may be that events look a little different this year but we are working proactively with our venues and suppliers to deliver a great experience on site.",
     day: "2021-10-03",
@@ -207,7 +207,7 @@ const events = [
   },
   {
     type: "Art_Culture",
-    name: "Placeholder Event Charity",
+    name: "Crafts Workshop Fundraiser",
     description:
       "I've added this event to add users to while I'm seeding charities",
     day: "2022-09-12",

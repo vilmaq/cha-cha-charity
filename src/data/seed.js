@@ -140,14 +140,14 @@ db.once("open", async () => {
       "Volunteer Litter Picking": "living.lands@gmail.com",
       "Community Tree Planting": "customerservice@morrisons.com",
       "Cheltenham 10k 2021": "customerservice@morrisons.com",
-      "Placeholder Event Charity": "jack.smith@gmail.com",
+      "Crafts Workshop Fundraiser": "jack.smith@gmail.com",
       "Placeholder Event Business": "art.fund@gmail.com",
       "Muddy Dog Challenge 2021": "info@battersea.org.uk",
       "Royal Parks Foundation Half Marathon": "bmortimer@howstuffworks.com",
       "MSF Scientific Day": "office-ldn@london.msf.org",
       "Acorns Children's Hospice Car Boot Sale": "heretohelp@bhf.org.uk",
       "Bournemouth Half Marathon": "hrhelpdesk@princes-trust.org.uk",
-      "Cancer Research UK's Shine Night Walk": "general@alzheimers.co.uk",
+      "Alzheimers UK's Shine Night Walk": "general@alzheimers.co.uk",
     };
 
     // clear database
