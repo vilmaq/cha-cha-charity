@@ -266,21 +266,21 @@ db.once("open", async () => {
 
     //mapping events to users
     const eventToCreatorMapper = {
-      "Photography workshop by Aspire West Sussex": "61276c54d68a1b688c8ff908",
-      "Fun Dog Show": "61276c54d68a1b688c8ff905",
-      "The Brilliant Breakfast 2021": "61276c54d68a1b688c8ff916",
-      "The Way Ahead": "61276c54d68a1b688c8ff919",
-      "Volunteer Litter Picking": "61276c54d68a1b688c8ff909",
-      "Community Tree Planting": "61276c54d68a1b688c8ff907",
-      "Cheltenham 10k 2021": "61276c54d68a1b688c8ff90e",
-      "Crafts Workshop Fundraiser": "61276c54d68a1b688c8ff917",
-      "Placeholder Event Business": "61276c54d68a1b688c8ff917",
-      "Muddy Dog Challenge 2021": "61276c54d68a1b688c8ff906",
-      "Royal Parks Foundation Half Marathon": "61276c54d68a1b688c8ff914",
-      "MSF Scientific Day": "61276c54d68a1b688c8ff90a",
-      "Acorns Children's Hospice Car Boot Sale": "61276c54d68a1b688c8ff90d",
-      "Bournemouth Half Marathon": "61276c54d68a1b688c8ff916",
-      "Alzheimers UK's Shine Night Walk": "61276c54d68a1b688c8ff90c",
+      "Photography workshop by Aspire West Sussex": "jack.smith@gmail.com",
+      "Fun Dog Show": "sarah.james@gmail.com",
+      "The Brilliant Breakfast 2021": "roxette.brooks@gmail.com",
+      "The Way Ahead": "art.fund@gmail.com",
+      "Volunteer Litter Picking": "living.lands@gmail.com",
+      "Community Tree Planting": "customerservice@morrisons.com",
+      "Cheltenham 10k 2021": "customerservice@morrisons.com",
+      "Placeholder Event Charity": "jack.smith@gmail.com",
+      "Placeholder Event Business": "art.fund@gmail.com",
+      "Muddy Dog Challenge 2021": "info@battersea.org.uk",
+      "Royal Parks Foundation Half Marathon": "bmortimer@howstuffworks.com",
+      "MSF Scientific Day": "office-ldn@london.msf.org",
+      "Acorns Children's Hospice Car Boot Sale": "heretohelp@bhf.org.uk",
+      "Bournemouth Half Marathon": "hrhelpdesk@princes-trust.org.uk",
+      "Cancer Research UK's Shine Night Walk": "general@alzheimers.co.uk",
     };
 
     // clear database
@@ -322,13 +322,12 @@ db.once("open", async () => {
         event["_id"],
 
         {
-          $set: { creator: creator["_id"] },
+          $set: { creator: creator },
         }
       );
     });
-
     const usersFromDb = await User.find({});
-    // // seeds participants
+
     const participantsToSeed = eventsFromDb.map((event) => {
       const eventName = event.name;
       const participantsForUser = eventToParticipantMapper[eventName];
@@ -351,6 +350,28 @@ db.once("open", async () => {
     });
 
     await Promise.all(promises);
+
+    // const creatorsToSeed = eventsFromDb.map((event) => {
+    //   const eventName = event.name;
+    //   const creatorForEvent = eventToCreatorMapper[eventName];
+    //   const creatorId = creatorForEvent.map((creatorForEvents) => {
+    //     const user = usersFromDb.find((creator) => {
+    //       return creator.email === creatorForEvents;
+    //     });
+
+    //     return user["_id"];
+    //   });
+
+    //   return { eventId: event._id, creator: creatorId };
+    // });
+    // const promiseCreator = creatorsToSeed.map((each) => {
+    //   return Event.updateOne(
+    //     { _id: each.eventId },
+    //     { $push: { creator: { $each: each.creator } } }
+    //   );
+    // });
+
+    // await Promise.all(promiseCreator);
 
     console.log("--- Successfully seeded participants ---");
 
