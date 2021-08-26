@@ -11,6 +11,10 @@ const context = require("./context");
 const app = express();
 
 const server = new ApolloServer({
+  cors: {
+    origin: "*",
+    credentials: true,
+  },
   typeDefs,
   resolvers,
   context,
