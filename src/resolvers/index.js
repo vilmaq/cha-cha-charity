@@ -6,7 +6,7 @@ const updateEvent = require("./updateEvent");
 const deleteEvent = require("./deleteEvent");
 const events = require("./events");
 const event = require("./event");
-const { GraphQLUpload, graphqlUploadExpress } = require("graphql-upload");
+//const { GraphQLUpload, graphqlUploadExpress } = require("graphql-upload");
 
 const resolvers = {
   Query: {
