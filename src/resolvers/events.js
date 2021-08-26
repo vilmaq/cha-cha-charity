@@ -1,9 +1,9 @@
 const { Event } = require("../models");
 
-const events = async (_, { userId }) => {
+const events = async (_, { creatorId }) => {
   let events;
-  if (userId) {
-    events = await Event.find({ user: userId })
+  if (creatorId) {
+    events = await Event.find({ creator: creatorId })
       .populate("creator")
       .populate("participants")
       .exec();

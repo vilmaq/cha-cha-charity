@@ -70,12 +70,12 @@ const schema = new Schema({
     type: Boolean,
     default: false,
   },
-  events: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: "Event",
-    },
-  ],
+  // events: [
+  //   {
+  //     type: Schema.Types.ObjectId,
+  //     ref: "Event",
+  //   },
+  // ],
 });
 
 const userSchema = new Schema(schema);

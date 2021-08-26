@@ -45,7 +45,7 @@ const typeDefs = gql`
   }
 
   type Query {
-    events(sortBy: String, top: Int): [Event]
+    events(creatorId: ID): [Event]
     event(id: ID!): Event
     users(sortBy: String, top: Int): [User]
     user(id: ID!): User
