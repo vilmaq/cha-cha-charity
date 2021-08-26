@@ -21,6 +21,7 @@ const updateEvent = async (_, { input }, context) => {
         },
         { new: true }
       ).populate("participants");
+
       console.log(event);
 
       return event;
