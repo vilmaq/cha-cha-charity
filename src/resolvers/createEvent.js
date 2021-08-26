@@ -47,4 +47,5 @@ const createEvent = async (_, { input }, context) => {
     );
   }
 };
+
 module.exports = createEvent;

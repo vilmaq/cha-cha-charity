@@ -13,7 +13,7 @@ const deleteEvent = async (_, { eventId }, context) => {
         },
       },
       { new: true }
-    ).populate("savedEvents");
+    ).populate("createEvents");
 
     return user;
   } else {
