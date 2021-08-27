@@ -8,6 +8,7 @@ const schema = new Schema({
     enum: ["Volunteer", "Business", "Charity"],
     required: true,
   },
+
   fullName: {
     type: String,
     required: true,
