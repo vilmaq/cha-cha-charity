@@ -81,7 +81,7 @@ db.once("open", async () => {
         "info@shapearts.org.uk",
         "jack.smith@gmail.com",
       ],
-      "Placeholder Event Business": [
+      "Pottery for Good": [
         "jack.smith@gmail.com",
         "rgerry0@stanford.com",
         "attopic@typepad.com",
@@ -141,7 +141,7 @@ db.once("open", async () => {
       "Community Tree Planting": "customerservice@morrisons.com",
       "Cheltenham 10k 2021": "customerservice@morrisons.com",
       "Crafts Workshop Fundraiser": "jack.smith@gmail.com",
-      "Placeholder Event Business": "art.fund@gmail.com",
+      "Pottery for Good": "art.fund@gmail.com",
       "Muddy Dog Challenge 2021": "info@battersea.org.uk",
       "Royal Parks Foundation Half Marathon": "bmortimer@wilty.com",
       "MSF Scientific Day": "office-ldn@london.msf.org",

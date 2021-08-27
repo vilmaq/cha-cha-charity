@@ -18,7 +18,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Volunteer",
@@ -38,7 +38,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Volunteer",
@@ -58,7 +58,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Volunteer",
@@ -78,7 +78,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Volunteer",
@@ -98,7 +98,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Volunteer",
@@ -118,7 +118,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Volunteer",
@@ -138,7 +138,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Volunteer",
@@ -158,7 +158,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Volunteer",
@@ -178,7 +178,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Volunteer",
@@ -197,7 +197,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Volunteer",
@@ -217,7 +217,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Volunteer",
@@ -237,7 +237,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Volunteer",
@@ -257,7 +257,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Volunteer",
@@ -277,7 +277,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
 
   // BUSINESSES //
@@ -299,7 +299,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
 
   {
@@ -320,7 +320,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
 
   {
@@ -341,7 +341,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Business",
@@ -361,7 +361,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Business",
@@ -381,7 +381,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Business",
@@ -401,7 +401,7 @@ const users = [
     international: true,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Business",
@@ -421,7 +421,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Business",
@@ -441,7 +441,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Business",
@@ -461,7 +461,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Business",
@@ -481,7 +481,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Business",
@@ -501,7 +501,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Business",
@@ -521,7 +521,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Business",
@@ -541,7 +541,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: true,
+    art: true,
   },
   {
     type: "Business",
@@ -561,7 +561,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Business",
@@ -581,7 +581,7 @@ const users = [
     international: false,
     health: true,
     education: true,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Business",
@@ -601,7 +601,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Business",
@@ -621,7 +621,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Business",
@@ -641,7 +641,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Business",
@@ -661,7 +661,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Business",
@@ -681,7 +681,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Business",
@@ -701,7 +701,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
 
   // CHARITIES //
@@ -726,7 +726,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Charity",
@@ -738,7 +738,7 @@ const users = [
     phoneNumber: "0800 001 4444",
     street: "4 Battersea Park Road",
     postcode: "SW8 4AA",
-    city: "Lodnon",
+    city: "London",
     country: "UK",
     bio: "Battersea Dogs & Cats Home rescues and rehomes lost, abandoned and unwanted dogs and cats. From the moment we welcomed our first stray dog in 1860 we have been placing our animals at the centre of everything we do. More than three million animals later, we're still working hard to achieve our vision that every dog and cat should live in a home where they are treated with love, care and respect.",
     animals: true,
@@ -746,7 +746,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
 
   /// ENVIRONMENTAL
@@ -769,7 +769,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Charity",
@@ -789,7 +789,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Charity",
@@ -809,7 +809,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
 
   /// INTERNATIONAL
@@ -832,7 +832,7 @@ const users = [
     international: true,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Charity",
@@ -852,7 +852,7 @@ const users = [
     international: true,
     health: false,
     education: false,
-    art_culture: false,
+    art: false,
   },
 
   /// HEALTH
@@ -875,7 +875,7 @@ const users = [
     international: false,
     health: true,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Charity",
@@ -895,7 +895,7 @@ const users = [
     international: false,
     health: true,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Charity",
@@ -915,7 +915,7 @@ const users = [
     international: false,
     health: true,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Charity",
@@ -935,7 +935,7 @@ const users = [
     international: false,
     health: true,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Charity",
@@ -955,7 +955,7 @@ const users = [
     international: false,
     health: true,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Charity",
@@ -975,7 +975,7 @@ const users = [
     international: false,
     health: true,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Charity",
@@ -995,7 +995,7 @@ const users = [
     international: false,
     health: true,
     education: false,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Charity",
@@ -1015,7 +1015,7 @@ const users = [
     international: false,
     health: true,
     education: false,
-    art_culture: false,
+    art: false,
   },
 
   /// EDUCATION
@@ -1038,7 +1038,7 @@ const users = [
     international: false,
     health: false,
     education: true,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Charity",
@@ -1058,7 +1058,7 @@ const users = [
     international: false,
     health: false,
     education: true,
-    art_culture: false,
+    art: false,
   },
   {
     type: "Charity",
@@ -1078,10 +1078,10 @@ const users = [
     international: false,
     health: false,
     education: true,
-    art_culture: false,
+    art: false,
   },
 
-  /// ART_CULTURE
+  /// art
   {
     type: "Charity",
     fullName: "Art Fund UK",
@@ -1099,7 +1099,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: true,
+    art: true,
   },
   {
     type: "Charity",
@@ -1119,7 +1119,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: true,
+    art: true,
   },
   {
     type: "Charity",
@@ -1139,7 +1139,7 @@ const users = [
     international: false,
     health: false,
     education: false,
-    art_culture: true,
+    art: true,
   },
 ];
 

@@ -201,9 +201,9 @@ const events = [
       "https://images.unsplash.com/photo-1571008907717-47660dc646b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
     participants: [],
   },
-  /// ART_CULTURE
+  /// Art
   {
-    type: "Art_Culture",
+    type: "Art",
     name: "The Way Ahead",
     description:
       "The Way Ahead was originally intended to be a 6-month community art project but 17 years later it is still in demand as a disability art protest piece which clearly demonstrates there is much more to be done, and much more to say. The rules of the road are a wonderful visual system. Information is easily communicated through the arrangement of simple shapes and symbols. When it comes to travel, we have found a system most people can understand easily. The Way Ahead was inspired by a wish that such a system could exist for disability awareness. This exhibition has been co-commissioned with Shape Arts. ",
@@ -219,7 +219,7 @@ const events = [
     participants: [],
   },
   {
-    type: "Art_Culture",
+    type: "Art",
     name: "Crafts Workshop Fundraiser",
     description:
       "You are welcome to pop in and delve into the craft resource box in our Heritage Room and see what you can make every day we are open during the holidays - there are also free activities, trails and quizzes to help you and your children explore our exhibits together. Any profits made from the sale of tickets and merchandise will be donated towards our program providing access to our Arts & Crafts courses and facilities to children that would otherwise not be able to engage with it",
@@ -235,7 +235,7 @@ const events = [
     participants: [],
   },
   {
-    type: "Art_Culture",
+    type: "Art",
     name: "Pottery for Good",
     description:
       "We are a community pottery based at The Old Print Works in Birmingham’s Balsall Heath, offering courses and studio membership to experienced and aspiring potters of all ages and abilities. Join us for a free for all pottery workshop, where every participant will be able to make a mug or a bowl and decorate it themselves. All works created on that day will be sold at our Open Day and profits will be donated to SIFA Fireside - a Digbeth based charity that support people at risk of homelessness.",
