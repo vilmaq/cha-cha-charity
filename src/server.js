@@ -4,6 +4,8 @@ const express = require("express");
 // const { ApolloServer, gql } = require("apollo-server-express");
 const db = require("./config/connection");
 
+const PORT = process.env.PORT || 3000;
+
 const resolvers = require("./resolvers");
 const typeDefs = require("./schema");
 const context = require("./context");
@@ -22,7 +24,7 @@ const server = new ApolloServer({
 
 db.once("open", () => {
   console.log("connected to db");
-  server.listen().then(({ url }) => {
+  server.listen({ port: PORT }).then(({ url }) => {
     console.log(`🚀  Server ready at ${url}`);
   });
 });
