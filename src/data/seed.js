@@ -30,7 +30,7 @@ db.once("open", async () => {
       ],
       "Cheltenham 10k 2021": [
         "jack.smith@gmail.com",
-        "bmortimer@howstuffworks.com",
+        "bmortimer@wilty.com",
         "customerservice@ikea.com",
         "rslottc@zdnet.com",
         "kbeccerob@cbslocal.com",
@@ -40,7 +40,7 @@ db.once("open", async () => {
         "sarah.james@gmail.com",
         "customerservice@morrisons.com",
         "living.lands@gmail.com",
-        "bmortimer@howstuffworks.com",
+        "bmortimer@wilty.com",
         "rslottc@zdnet.com",
       ],
       "Volunteer Litter Picking": [
@@ -50,15 +50,15 @@ db.once("open", async () => {
         "living.lands@gmail.com",
       ],
       "The Way Ahead": [
-        "rsmeuinh@php.net",
+        "rondas@gmail.com",
         "njorin@unicef.org",
         "fschuler9@gmail.com",
         "art.fund@gmail.com",
         "rslottc@zdnet.com",
         "omossoni@nifty.com",
       ],
-      "Placeholder Event Charity": [
-        "corporate@pdsa.org.uk",
+      "Crafts Workshop Fundraiser": [
+        "corporate@RSPCA.org.uk",
         "info@battersea.org.uk",
         "media@foe.co.uk",
         "enquiries@nationaltrust.org.uk",
@@ -81,7 +81,7 @@ db.once("open", async () => {
         "info@shapearts.org.uk",
         "jack.smith@gmail.com",
       ],
-      "Placeholder Event Business": [
+      "Pottery for Good": [
         "jack.smith@gmail.com",
         "rgerry0@stanford.com",
         "attopic@typepad.com",
@@ -109,22 +109,22 @@ db.once("open", async () => {
         "fschuler9@gmail.com",
       ],
       "Royal Parks Foundation Half Marathon": [
-        "bmortimer@howstuffworks.com",
-        "rsmeuinh@php.net",
+        "bmortimer@wilty.com",
+        "rondas@gmail.com",
         "cwolfersj@salon.com",
       ],
-      "MSF Scientific Day": ["rsmeuinh@php.net", "kbeccerob@cbslocal.com"],
+      "MSF Scientific Day": ["rondas@gmail.com", "kbeccerob@cbslocal.com"],
       "Acorns Children's Hospice Car Boot Sale": [
         "ggillbef@nature.com",
-        "rsmeuinh@php.net",
+        "rondas@gmail.com",
         "kbeccerob@cbslocal.com",
       ],
       "Bournemouth Half Marathon": [
-        "rsmeuinh@php.net",
+        "rondas@gmail.com",
         "rslottc@zdnet.com",
         "sarah.james@gmail.com",
       ],
-      "Cancer Research UK's Shine Night Walk": [
+      "Alzheimers UK's Shine Night Walk": [
         "kbeccerob@cbslocal.com",
         "fschuler9@gmail.com",
         "sarah.james@gmail.com",
@@ -140,14 +140,14 @@ db.once("open", async () => {
       "Volunteer Litter Picking": "living.lands@gmail.com",
       "Community Tree Planting": "customerservice@morrisons.com",
       "Cheltenham 10k 2021": "customerservice@morrisons.com",
-      "Placeholder Event Charity": "jack.smith@gmail.com",
-      "Placeholder Event Business": "art.fund@gmail.com",
+      "Crafts Workshop Fundraiser": "jack.smith@gmail.com",
+      "Pottery for Good": "art.fund@gmail.com",
       "Muddy Dog Challenge 2021": "info@battersea.org.uk",
-      "Royal Parks Foundation Half Marathon": "bmortimer@howstuffworks.com",
+      "Royal Parks Foundation Half Marathon": "bmortimer@wilty.com",
       "MSF Scientific Day": "office-ldn@london.msf.org",
       "Acorns Children's Hospice Car Boot Sale": "heretohelp@bhf.org.uk",
       "Bournemouth Half Marathon": "hrhelpdesk@princes-trust.org.uk",
-      "Cancer Research UK's Shine Night Walk": "general@alzheimers.co.uk",
+      "Alzheimers UK's Shine Night Walk": "general@alzheimers.co.uk",
     };
 
     // clear database
